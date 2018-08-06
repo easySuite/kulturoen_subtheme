@@ -44,7 +44,7 @@
   <?php endif; ?>
 
   <?php if (!empty($content['bottom'])): ?>
-    <div class="bottom btn">
+    <div class="bottom">
       <?php print render($content['bottom']); ?>
     </div>
   <?php endif; ?>

@@ -1,0 +1,86 @@
+/* Ding nodelist styles
+   ========================================================================== */
+
+.page-ding-frontpage .ding_nodelist-carousel {
+  .ding_nodelist-items {
+    .event-image img {
+      height: 500px;
+    }
+  }
+}
+
+.ding_nodelist {
+  .event-time .event-day,
+  .pagination a.selected {
+   background-color: $color-primary;
+    color: $charcoal;
+    font-family: "SourceSansProSemibold";
+    text-transform: uppercase;
+  }
+
+  .pagination {
+    top: 30px;
+
+    a {
+      background-color: $white;
+  
+      span {
+       color: $charcoal;
+      }
+    }
+  }
+
+  .event-date,
+  .event-month {
+    color: $charcoal;
+  }
+
+  .event-date{
+    font-family: "SourceSansProSemibold";
+  }
+
+  .field-name-field-ding-news-library {
+    .field-item a {
+      color: $color-primary;
+    }
+  }
+
+  .library a {
+    color: $color-primary;
+    text-decoration: underline;
+  }
+
+  h3.node-title {
+    font-size: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .node {
+    .item-date,
+    .library a,
+    .item-price {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .ding_nodelist-items{
+
+    h2.item-title a {
+      color: $charcoal;
+      font-size: 16px;
+      font-family: "SourceSansProSemibold";
+    }
+
+    .date,
+    .author,
+    .item-body {
+      color: $charcoal;
+      font-family: "SourceSansProRegular";
+    }
+  }
+}

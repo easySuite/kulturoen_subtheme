@@ -1,0 +1,28 @@
+.content-wrapper {
+  .frontpage-layout .panel-pane-inner, 
+  .left-sidebar.default-layout .layout-wrapper,
+  .pane-page-content  {
+    width: 100%;
+
+    @media #{$wide}, #{$normal} {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: 0 20px;
+    }
+ }
+}
+
+html, body {
+  font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
+}
+
+a:link {
+  color: $charcoal-lighter;
+
+  &:hover {
+    color: $charcoal-lighter;
+    text-decoration: none;
+  }
+}
