@@ -1,0 +1,6 @@
+name = 'Kulturoen Subtheme'
+description = Kulture subtheme.
+core = 7.x
+theme = Kulturoen Subtheme
+
+base theme = culture
