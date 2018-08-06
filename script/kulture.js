@@ -1,7 +1,7 @@
 (function ($) {
   "use strict";
 
-  Drupal.behaviors.bootstrap_culture_overrides = {
+  Drupal.behaviors.kulturoen_subtheme_overrides = {
     attach: function (context, settings) {
 
       if ($('.navigation-wrapper .main-menu-wrapper ', context).length) {

@@ -9996,7 +9996,7 @@ table#calendar {
   font-family: SourceSansProSemibold; }
 
 .pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar .calendar-row .calendar-day-head {
-  background-color: #e5e5e5;
+  background-color: #808285;
   color: #262626;
   text-transform: lowercase; }
 
@@ -10004,13 +10004,13 @@ table#calendar {
   background-color: #f1f2f2; }
 
 .pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar .calendar-row .calendar-day {
-  background-color: #e5e5e5;
+  background-color: #808285;
   color: #ffffff;
   text-decoration: underline;
   border-color: #bbbbbb; }
 
 .pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar .calendar-row .has-events {
-  background-color: #ccc; }
+  background-color: #808285; }
 
 .pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar .calendar-row td.calendar-day.has-events.selected {
   background-color: #a6d6cc; }
@@ -10022,7 +10022,7 @@ table#calendar {
   font-size: 20px; }
 
 .pane-ding-event-calendar-ding-event-calendar #eventList .event-items .event-item {
-  background-color: #ccc;
+  background-color: #808285;
   border-bottom: 1px solid #bbbbbb; }
 
 .pane-ding-event-calendar-ding-event-calendar #eventList .event-items .event-time {

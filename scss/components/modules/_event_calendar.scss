@@ -13,7 +13,7 @@
     #calendar{
       .calendar-row {
         .calendar-day-head {
-          background-color: $grey;
+          background-color: $grey-dark;
           color: $charcoal;
           text-transform: lowercase;
         }
@@ -23,14 +23,14 @@
         }
 
         .calendar-day {
-          background-color: $grey;    
+          background-color: $grey-dark;    
           color: $white;
           text-decoration: underline;
           border-color: #bbbbbb;
         }
 
         .has-events {
-          background-color: $grey-medium;
+          background-color: $grey-dark;
         }
 
         td.calendar-day.has-events.selected {
@@ -51,7 +51,7 @@
     }
     .event-items {
       .event-item {
-        background-color: $grey-medium;
+        background-color: $grey-dark;
         border-bottom: 1px solid #bbbbbb;
       }
 
