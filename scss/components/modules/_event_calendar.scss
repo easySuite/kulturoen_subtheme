@@ -1,0 +1,92 @@
+/* Event calendar styles
+   ========================================================================== */
+
+.pane-ding-event-calendar-ding-event-calendar {
+  #eventsCalendar {
+
+    h2 {
+      text-transform: lowercase;
+      color: $charcoal;
+      font-family: SourceSansProSemibold;
+    }
+
+    #calendar{
+      .calendar-row {
+        .calendar-day-head {
+          background-color: $grey-dark;
+          color: $charcoal;
+          text-transform: lowercase;
+        }
+
+        .calendar-day-np {
+          background-color: $grey-light;
+        }
+
+        .calendar-day {
+          background-color: $grey-dark;    
+          color: $white;
+          text-decoration: underline;
+          border-color: #bbbbbb;
+        }
+
+        .has-events {
+          background-color: $grey-dark;
+        }
+
+        td.calendar-day.has-events.selected {
+         background-color: $color-primary;
+
+          a {
+           color: $charcoal;
+          }
+        }
+      }
+    }
+  }
+
+  #eventList {
+    .event-day-header {
+      color: $charcoal;
+      font-size: 20px;
+    }
+    .event-items {
+      .event-item {
+        background-color: $grey-dark;
+        border-bottom: 1px solid #bbbbbb;
+      }
+
+      .event-time {
+        color: $white;
+      }
+
+      .event-location,
+      .event-category {
+        display: none;
+      }
+
+      .event-title {
+        max-width: 80%;
+        a {
+          color: $color-primary;
+          text-decoration: none;
+          font-family: SourceSansProSemibold;
+        }
+      }
+    }
+
+    .more-link  {
+      font-family: SourceSansProSemibold;
+      background-color: transparent;
+      color: $charcoal;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      a:link,
+      a {
+        color: $charcoal;
+      }
+    }
+  }
+}
