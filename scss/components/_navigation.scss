@@ -17,24 +17,59 @@
 
 // Navigation, main menu and secondary menu
 //==========================================================================
+.navigation-wraper {
+  padding-bottom:0;
+  top: 0;
 
-.navigation-inner{
-  max-width: 1229px;
+  .navigation-inner {
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
-.main-menu-wrapper {
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
+.navbar-toggler {
+  position: absolute;
+  top: -70px;
+  right: 20px;
+  background: $color-primary;
+}
+
+.navbar-collapse.collapse.show {
+   z-index: 2;
+}
+
+#page .main-menu-wrapper {
+  max-width: 100%;
+  background-color: $color-secondary;
+  min-width: 300px;
+  margin-left: 0px;
+  float: left;
 
   .main-menu {
     background-color: $color-secondary;
     padding-left: 30px;
-    position: relative;
-    margin-top: 10px;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    position: fixed;
+
+    @media #{$wide}, #{$normal} {
+      top: 0;
+      margin-left: 5px;
+      position: relative;
+      padding: 10px 0 10px 30px
+    }
 
     li {
-      margin-right: 25px;
+      display: block;
+      width: 100%;
+
+      @media #{$wide}, #{$normal} {
+        margin-right: 25px;
+        display: inline-block;
+        width: auto;
+      }
     }
 
     a {
@@ -52,14 +87,27 @@
   }
 
   .transform-main-menu {
-    background-color: $color-secondary;
-    width: 1100px;;
-    margin-left: 94px;
-    height: 35px;
-    top: -15px;
-    position: absolute;
-    transform: matrix3d( 1.0988372093023255, 0.032567049808429116,
-    0, 0.00018934331283970417, 0, 1.0988372093023255, 0, 0, 0, 0, 1, 0, 23, 9, 0, 1 );
+    width: auto;
+    height: auto;
+
+    @media #{$tablet} {
+      display: none;
+    }
+  }
+
+  @media #{$wide} {
+    .transform-main-menu {
+      display: block;
+      background-color: $color-secondary;
+      width: 100%;
+      margin-left: 0;
+      left: 50px;
+      height: 35px;
+      top: -15px;
+      position: absolute;
+      transform: matrix3d( 1.0988372093023255, 0.032567049808429116,
+      0, 0.00018934331283970417, 0, 1.0988372093023255, 0, 0, 0, 0, 1, 0, 23, 9, 0, 1 );
+    }
   }
 }
 
@@ -114,19 +162,26 @@
       }
     }
   }
-
   .transform-sub-menu {
-    background-color: $color-primary;
-    height: 97px;
-    width: 441px;
-    margin-top: -19px;
-    margin-left: 120px;
-    position: absolute;
-    z-index: 0;
-    transform: matrix3d(0.950, 0, 0, -0.00060, -0.10300,
-    0.81307, 0, -0.00070, 0, 0, 1, 0, 0, 0, 0, 1);
+    visibility: hidden;
+    @media #{$wide}, #{$normal} {
+      visibility: visible;
+    }
   }
 
+  @media #{$wide}, #{$normal} {
+    .transform-sub-menu {
+      background-color: $color-primary;
+      height: 97px;
+      width: 441px;
+      margin-top: -19px;
+      margin-left: 120px;
+      position: absolute;
+      z-index: 0;
+      transform: matrix3d(0.950, 0, 0, -0.00060, -0.10300,
+      0.81307, 0, -0.00070, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+  }
 }
 
 .system-user-menu {
@@ -252,25 +307,50 @@
     img {
       margin-top: 0;
       position: absolute;
-      top: 0;
-      left: -65px;
+      top: 35px;
+      left: -25px;
+
+      @media #{$wide}, #{$normal} {
+       left: -65px;
+       top: 0;
+      }
     }
   }
   .topbar {
-    height: 150px;
+    height: 100px;
+    z-index: auto;
+
+    @media #{$wide}, #{$normal} {
+      height: 150px;
+      width: 100%;
+    }
   }
 
   .topbar-inner {
-    max-width: 1200px;
-    height: inherit;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    width: 290px;
+    margin-left: 0;
+
+    @media #{$wide}, #{$normal} {
+      max-width: 1200px;
+      height: inherit;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 
   .transform-content1,
   .transform-content2 {
     margin-top: 45px;
+    display: none;
+
+    @media  #{$tablet} {
+      display: none;
+    }
+    @media #{$wide} {
+      display: block;
+    }
+
   }
 }
 
@@ -341,27 +421,29 @@ a {
   margin-top: 0px;
 }
 
-.transform-content1 {
-  background: #ffffff;
-  width: 1155px;
-  height: 432px;
-  position: absolute;
-  top: -38px;
-  transform: matrix3d(1.03891, -0.00383, 0, 0.00005, 0.0289, 1.03311, 0, 0.00006, 0, 0, 1, 0, 32, 2, 0, 1);
-  z-index: 0;
-  margin: 0 auto;
-}
+@media #{$wide}, #{$normal} {
+  .transform-content1 {
+    background: #ffffff;
+    width: 1155px;
+    height: 432px;
+    position: absolute;
+    top: -38px;
+    transform: matrix3d(1.03891, -0.00383, 0, 0.00005, 0.0289, 1.03311, 0, 0.00006, 0, 0, 1, 0, 32, 2, 0, 1);
+    z-index: 0;
+    margin: 0 auto;
+  }
 
-.transform-content2 {
-  background: #ffffff;
-  width: 1178px;
-  height: 428px;
-  position: absolute;
-  transform: matrix3d(1.01548, 0.00193, 0, 0.00001, 0, 1.00963, 0, 0.00006, 0, 0, 1, 0, 3, 0, 0, 1);
-  z-index: 0;
-  margin-left: 21px;
-  margin-right: auto;
-  top: -45px;
+  .transform-content2 {
+    background: #ffffff;
+    width: 1178px;
+    height: 428px;
+    position: absolute;
+    transform: matrix3d(1.01548, 0.00193, 0, 0.00001, 0, 1.00963, 0, 0.00006, 0, 0, 1, 0, 3, 0, 0, 1);
+    z-index: 0;
+    margin-left: 21px;
+    margin-right: auto;
+    top: -45px;
+  }
 }
 
 .label a:link,
@@ -386,10 +468,51 @@ a {
   font-family: "SourceSansProSemibold";
 }
 
-html #page .content-inner {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  background: #fff;
-  padding-top: 35px;
+html #page .content-wrapper {
+  background: $white;
+
+  .content-inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media #{$wide}, #{$normal} {
+  html #page { 
+    .content-inner {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      background: $white;
+      padding-top: 35px;
+    }
+
+    .content-wrapper {
+      background: transparent;
+    }
+  }
+}
+
+.html.not-front #page {
+  .pane-page-content {
+    .ding2-site-template {
+      .content-wrapper {
+        background: $white;
+
+        .transform-content1,
+        .transform-content2 {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.pane-page-messages,
+.logged-in .pane-page-tabs {
+  position: relative;
+}
+
+.logged-in .pane-content ul.menu {
+  display: none;
 }
