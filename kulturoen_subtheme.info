@@ -10,9 +10,3 @@ base theme = culture
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = css/style.css
-
-;;;;;;;;;;;;;;;;;;;;;
-;; Scripts
-;;;;;;;;;;;;;;;;;;;;;
-
-scripts[] = script/kulture.js
