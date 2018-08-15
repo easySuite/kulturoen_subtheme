@@ -11,11 +11,13 @@
 
 .ding_nodelist {
   .event-time .event-day,
-  .pagination a.selected {
+  .pagination a.selected,
+  .field-name-field-ding-event-category {
    background-color: $color-primary;
     color: $charcoal;
     font-family: "SourceSansProSemibold";
     text-transform: uppercase;
+    font-weight: 600;
   }
 
   .pagination {
@@ -30,9 +32,14 @@
     }
   }
 
+  .event-day {
+    font-weight: 600;
+  }
+
   .event-date,
   .event-month {
     color: $charcoal;
+    text-transform: uppercase;
   }
 
   .event-date{
@@ -48,6 +55,7 @@
   .library a {
     color: $color-primary;
     text-decoration: underline;
+    font-weight: 600px;
   }
 
   h3.node-title {
@@ -56,15 +64,31 @@
     text-transform: uppercase;
   }
 
-  .node {
+  .article-info {
+    background: transparent;
+  }
+
+  .item .node {
+    background-image: -webkit-linear-gradient(transparent 0%,rgba(0,0,0,0.3) 0%);
+    height: 100%;
+
     .item-date,
     .library a,
     .item-price {
       font-size: 18px;
+      font-weight: 600;
     }
 
     p {
       font-size: 18px;
+    }
+
+    .node-title a {
+      font-weight: 600;
+
+      &:hover {
+        color: $white;
+      }
     }
   }
 
@@ -74,6 +98,7 @@
       color: $charcoal;
       font-size: 16px;
       font-family: "SourceSansProSemibold";
+      font-weight: 600;
     }
 
     .date,
@@ -81,6 +106,7 @@
     .item-body {
       color: $charcoal;
       font-family: "SourceSansProRegular";
+      font-size: $font-size-max;
     }
   }
 }
