@@ -76,6 +76,7 @@
       color: $charcoal;
       text-transform: uppercase;
       font-size: 15px;
+      font-weight: 600;
       font-family: "SourceSansProSemibold","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
       &:hover {
         color: $color-text-link;
@@ -257,12 +258,24 @@
     div.footer-inner > div.pane-block {
       padding-top: 20px;
       padding-bottom: 20px;
+      position: relative;
     }
 
     .footer-inner {
       margin-right: auto;
       margin-left: auto;
       width: 100%;
+    }
+
+    .pane-title::after {
+      font-family: 'icomoon';
+      display: inline-block;
+      position: absolute;
+      bottom: 45px;
+      right: 0;
+      content: "\e900";
+      font-size: 60px;
+      font-weight: 800;
     }
   }
 }

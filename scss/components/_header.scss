@@ -98,6 +98,9 @@
                 background-color: $charcoal;
                 color: $color-primary;
 
+                ::placeholder {
+                  color: $color-primary;
+                }
                 @media #{$wide}, #{$normal} {
                   max-width: 200px;
                 }
@@ -120,6 +123,8 @@
             text-transform: uppercase;
             font-family: "SourceSansProSemibold";
             border-radius: inherit;
+            font-size: 20px;
+            font-weight: bold;
           }
         }
       }
