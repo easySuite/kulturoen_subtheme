@@ -13,7 +13,7 @@
     #calendar{
       .calendar-row {
         .calendar-day-head {
-          background-color: $grey-dark;
+          background-color: $grey-medium;
           color: $charcoal;
           text-transform: lowercase;
         }
@@ -23,7 +23,7 @@
         }
 
         .calendar-day {
-          background-color: $grey-dark;    
+          background-color: $grey;    
           color: $white;
           text-decoration: underline;
           border-color: #bbbbbb;
@@ -45,6 +45,7 @@
   }
 
   #eventList {
+    border: none;
     .event-day-header {
       color: $charcoal;
       font-size: 20px;
@@ -57,6 +58,7 @@
 
       .event-time {
         color: $white;
+        line-height: 3;
       }
 
       .event-location,

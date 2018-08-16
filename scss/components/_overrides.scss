@@ -11,11 +11,27 @@
       width: 100%;
       padding: 0 20px;
     }
- }
+  }
+}
+
+//mixin 
+@mixin wrapper() {
+  @include outer-container;
+  width: $wrapper-width;
+}
+
+@mixin outer-container {
+  @include clearfix;
+  max-width: $max-width;
+  margin: {
+    left: auto;
+    right: auto;
+  }
 }
 
 html, body {
-  font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
+  font-family: $font-family;
+  height: 100%;
 }
 
 a:link {

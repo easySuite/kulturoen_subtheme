@@ -75,9 +75,7 @@
     a {
       color: $charcoal;
       text-transform: uppercase;
-      font-size: 15px;
-      font-weight: 600;
-      font-family: "SourceSansProSemibold","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
+      font-family: $font-family-bold;
       &:hover {
         color: $color-text-link;
       }
@@ -102,7 +100,7 @@
       background-color: $color-secondary;
       width: 100%;
       margin-left: 0;
-      left: 50px;
+      left: 34px;
       height: 35px;
       top: -15px;
       position: absolute;
@@ -123,17 +121,22 @@
     right: 0;
     height: 70px;
     margin-top: -5px;
+    margin-right: -10px;
 
     li {
-      padding: 20px 10px 20px 0px;
+      padding: 20px 20px 20px 0px;
       border-right: transparent;
       margin-right: 0;
+
+      &:last-child {
+        padding-right: 0; 
+      }
 
       a {
         text-transform: uppercase;
         border-right: 2px solid $grey-dark;
-        padding-right: 10px;
-        
+        padding-right: 20px;
+        font-family: $font-family-bold;
       }
 
       &:last-child{
@@ -174,9 +177,9 @@
     .transform-sub-menu {
       background-color: $color-primary;
       height: 97px;
-      width: 441px;
+      width: 480px;
       margin-top: -19px;
-      margin-left: 120px;
+      margin-left: 85px;
       position: absolute;
       z-index: 0;
       transform: matrix3d(0.950, 0, 0, -0.00060, -0.10300,
@@ -270,12 +273,12 @@
     .pane-title::after {
       font-family: 'icomoon';
       display: inline-block;
-      position: absolute;
-      bottom: 45px;
+      position: relative;
       right: 0;
       content: "\e900";
       font-size: 60px;
-      font-weight: 800;
+      font-weight: 600;
+      top: 15px;
     }
   }
 }
@@ -372,14 +375,6 @@
   position: relative;
 }
 
-.frontpage-layout {
-  background: $white;
-}
-
-body {
-  height: 100%;
-}
-
 // Links color
 
 a {
@@ -419,8 +414,8 @@ a {
   }
 }
 
-.content-wrapper {
-  margin-top: 0;
+.front .content-wrapper {
+  margin-top: 25px;
 }
 
 .not-front {
@@ -478,16 +473,25 @@ a {
   border-radius: 4px;
   font-size: 12px;
   padding: 3px;
-  font-family: "SourceSansProSemibold";
+  font-family: $font-family-bold;
 }
 
 html #page .content-wrapper {
   background: $white;
 
   .content-inner {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
+
+    .row:last-child {
+      padding-top: 20px;
+    }
   }
+}
+
+html .not-front #page .content-wrapper .content-inner {
+  padding-top: 1px;
+  margin-top: 0;
 }
 
 @media #{$wide}, #{$normal} {
@@ -497,7 +501,6 @@ html #page .content-wrapper {
       margin-left: auto;
       margin-right: auto;
       background: $white;
-      padding-top: 35px;
     }
 
     .content-wrapper {
