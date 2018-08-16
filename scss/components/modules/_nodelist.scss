@@ -15,10 +15,16 @@
   .field-name-field-ding-event-category {
    background-color: $color-primary;
     color: $charcoal;
-    font-family: "SourceSansProSemibold";
+    font-family: $font-family-bold;
     text-transform: uppercase;
-    font-weight: 600;
   }
+
+  &.ding_nodelist-carousel {
+    .slick-dots li.slick-active a {
+      color: $charcoal;
+      line-height: 1.8;
+    }
+  } 
 
   .pagination {
     top: 30px;
@@ -33,7 +39,7 @@
   }
 
   .event-day {
-    font-weight: 600;
+    font-family: $font-family-bold;
   }
 
   .event-date,
@@ -43,7 +49,15 @@
   }
 
   .event-date{
-    font-family: "SourceSansProSemibold";
+    font-family: $font-family-bold;
+  }
+
+  .event-time {
+    width: 50px;
+
+    .event-month {
+    font-size: 9px;
+    }
   }
 
   .field-name-field-ding-news-library {
@@ -55,7 +69,7 @@
   .library a {
     color: $color-primary;
     text-decoration: underline;
-    font-weight: 600px;
+    font-family: $font-family-bold;
   }
 
   h3.node-title {
@@ -68,6 +82,15 @@
     background: transparent;
   }
 
+  span {
+    font-family: $font-family-bold;
+    font-size: $font-size-max;
+  }
+
+  &.ding_nodelist-taxonomy .item {
+    margin-bottom: 20px;
+  }
+
   .item .node {
     background-image: -webkit-linear-gradient(transparent 0%,rgba(0,0,0,0.3) 0%);
     height: 100%;
@@ -75,16 +98,16 @@
     .item-date,
     .library a,
     .item-price {
-      font-size: 18px;
-      font-weight: 600;
+      font-size: $font-size-max;
+      font-family: $font-family-bold;
     }
 
     p {
-      font-size: 18px;
+      font-size: $font-size-max;
     }
 
     .node-title a {
-      font-weight: 600;
+      font-family: $font-family-bold;
 
       &:hover {
         color: $white;
@@ -97,8 +120,7 @@
     h2.item-title a {
       color: $charcoal;
       font-size: 16px;
-      font-family: "SourceSansProSemibold";
-      font-weight: 600;
+      font-family: $font-family-bold;
     }
 
     .date,
@@ -107,6 +129,75 @@
       color: $charcoal;
       font-family: "SourceSansProRegular";
       font-size: $font-size-max;
+    }
+  }
+}
+
+.ding_nodelist-taxonomy {
+  .event-list-leaf .event-list-date-wrapper {
+    display: none;
+  }
+
+  .item {
+    position: relative;
+  }
+
+  .event-list-leaf {
+    display: none;
+  }
+
+  .field-type-taxonomy-term-reference {
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 3px;
+    width: auto;
+  }
+
+  .event-list-fulldate,.label {
+    display: inline-block;
+  }
+
+  span.item-library,
+  .item-date,
+  .item-price,
+  .item-body span,
+  .event-list-fulldate,
+  .more a {
+    font-family: $font-family;
+    font-size: 16px;
+    color: $charcoal;
+  }
+
+  .more {
+    display: block;
+  }
+
+  .event-list-leaf ~ .item .item-list-image,
+  .event-list-leaf ~ .item .item-library {
+    display: inline-block;
+    @extend .float-left;
+  }
+
+
+  .event-list-leaf ~ .item .item-details {
+    @extend .float-right;
+    display: inline-block;
+    width: 76%;
+
+    .event-arrow-link {
+      display: inline-block;
+      position: absolute;
+      right: 15px;
+      bottom: 0;
+      top: auto;
+
+      &:after {
+        color: $charcoal;
+        font-family: $font-family;
+        content: 'Læs mere';
+        width: 150px;
+        font-size: 16px;
+      }
     }
   }
 }
