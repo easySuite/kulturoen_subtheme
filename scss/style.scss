@@ -6,19 +6,21 @@
 //
 
 // Include configuration
-
-@import "../../../../../profiles/ding2/themes/culture/scss/style.scss";
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import "_fonts.scss";
 @import '_default-variables';
 @import "../../../../../profiles/ding2/themes/culture/scss/_mixin.scss";
-@import "_extend.scss";
 @import "../../../../../profiles/ding2/themes/culture/scss/components/_buttons.scss";
-@import 'components/_navigation';
 @import "../../../../../profiles/ding2/themes/culture/scss/_overrides.scss";
+@import "_extend.scss";
+@import 'components/_navigation';
 @import "components/_overrides.scss";
 @import "components/_buttons.scss";
 
 //Custom style
 @import "../../../../../profiles/ding2/themes/culture/scss/components/node/event";
+@import "../../../../../profiles/ding2/themes/culture/scss/components/node/library";
+@import "../../../../../profiles/ding2/themes/culture/scss/components/node/page";
 @import "../../../../../profiles/ding2/themes/culture/scss/components/node/news";
 @import "../../../../../profiles/ding2/themes/culture/scss/components/_search.scss";
 @import "../../../../../profiles/ding2/themes/culture/scss/components/_footer.scss";
@@ -27,5 +29,6 @@
 @import "../../../../../profiles/ding2/themes/culture/scss/components/modules/_kultur_calendar.scss";
 @import "../../../../../profiles/ding2/themes/culture/scss/components/modules/_ding_event_calendar.scss";
 @import "components/modules/_nodelist";
+@import "components/modules/_instagram";
 @import "components/modules/_event_calendar";
 @import "components/_header.scss";
