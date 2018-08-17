@@ -9570,7 +9570,8 @@ table#calendar {
       #kultur_calendar-day .kultur_calendar-body .row .amount, #kultur_calendar-day .kultur_calendar-body .footer-inner .amount, #kultur_calendar-day .kultur_calendar-body .kultur_calendar-title > a .amount, #kultur_calendar-day .kultur_calendar-body > a .amount {
         position: absolute;
         padding-left: 10px;
-        font-family: "SourceSansProSemibold"; }
+        font-family: "SourceSansProSemibold";
+        font-size: 18px; }
       #kultur_calendar-day .kultur_calendar-body .row .title, #kultur_calendar-day .kultur_calendar-body .footer-inner .title, #kultur_calendar-day .kultur_calendar-body .kultur_calendar-title > a .title, #kultur_calendar-day .kultur_calendar-body > a .title {
         padding-left: 30px; }
         #kultur_calendar-day .kultur_calendar-body .row .title .other, #kultur_calendar-day .kultur_calendar-body .footer-inner .title .other, #kultur_calendar-day .kultur_calendar-body .kultur_calendar-title > a .title .other, #kultur_calendar-day .kultur_calendar-body > a .title .other {
