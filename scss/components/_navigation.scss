@@ -20,6 +20,7 @@
 .navigation-wraper {
   padding-bottom:0;
   top: 0;
+  z-index: auto;
 
   .navigation-inner {
     display: table;
@@ -36,7 +37,7 @@
 }
 
 .navbar-collapse.collapse.show {
-   z-index: 2;
+  z-index: 2;
 }
 
 #page .main-menu-wrapper {
@@ -54,7 +55,14 @@
     right: 0;
     position: fixed;
 
-    @media #{$wide}, #{$normal} {
+    @media #{$tablet} {
+      top: 15px;
+      margin-left: 5px;
+      position: relative;
+      padding: 10px 0 10px 30px
+    }
+
+    @media #{$wide} {
       top: 0;
       margin-left: 5px;
       position: relative;
@@ -76,6 +84,8 @@
       color: $charcoal;
       text-transform: uppercase;
       font-family: $font-family-bold;
+      z-index: 1;
+      position: relative;
       &:hover {
         color: $color-text-link;
       }
@@ -514,6 +524,20 @@ html .not-front #page .content-wrapper .content-inner {
   }
 }
 
+.panel-pane-inner {
+  .container {
+    margin-top: 0;
+
+    @media #{$tablet} {
+      margin-top: 30px;
+    }
+
+    @media #{$wide} {
+      margin-top: 0;
+    }
+  }
+}
+
 .html.not-front #page {
   .pane-page-content {
     .ding2-site-template {
@@ -533,6 +557,7 @@ html .not-front #page .content-wrapper .content-inner {
 .logged-in .pane-page-tabs {
   position: relative;
   margin-top: 20px;
+  z-index: 1;
 }
 
 .logged-in .pane-content ul.menu {

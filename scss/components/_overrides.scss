@@ -32,6 +32,9 @@
 html, body {
   font-family: $font-family;
   height: 100%;
+  background-image: url(../background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 a:link {
@@ -42,3 +45,24 @@ a:link {
     text-decoration: none;
   }
 }
+
+.pane-node-field-ding-event-materials {
+  display: none;
+}
+
+#page .site-header .topbar-inner .site-name-container.logo-container  {
+  .site-name {
+    color: $white;
+    display: block;
+    margin-left: 95px;
+    top: 21px;
+    position: relative;
+    z-index: 1;
+
+    @media #{$wide}, #{$normal} {
+    margin-left: 125px;
+    top: 0;
+    }
+  }
+}
+
