@@ -24,6 +24,26 @@
       color: $charcoal;
       line-height: 1.8;
     }
+
+    .slick-dots {
+      width: auto;
+      height: 30px;
+
+
+       li a {
+        background-color: $white;
+        color: $charcoal;
+      }
+
+      li.slick-active a {
+        background: $color-primary;
+      }
+    }
+
+    .slick-arrow {
+      color: $color-primary;
+      z-index: 1;
+    }
   } 
 
   .pagination {
@@ -200,7 +220,6 @@
     bottom: -16px;
     right: -10px;
   }
-
 
   .event-list-leaf ~ .item .item-list-image,
   .event-list-leaf ~ .item .item-library {
