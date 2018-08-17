@@ -1,0 +1,68 @@
+.library-list .card {
+   border: none;
+}
+
+.node-ding-library.node-teaser .card-body {
+  .libraries {
+    &:after{
+      content: ".";
+      visibility: hidden;
+      display: block;
+      height: 0;
+      clear: both;
+    }
+
+    .ding-library-left {
+      float: left;
+      margin-right: 25px;
+    }
+
+    .ding-library-right {
+      float: left;
+      clear: none;
+      margin-bottom: 0;
+      width: 600px;
+    }
+  }
+}
+
+.view-ding-library .library-list .views-row:last-child {
+  border-bottom: 1px solid rgba(38, 38, 38, 0.2);
+}
+.opening-hours-week {
+  .button-next {
+    color: $white;
+
+    &::before {
+      content: "\e904";
+      vertical-align: sub;
+      font-family: 'icomoon';
+      color: $charcoal;
+      line-height: 0.5;
+      font-size: 60px;
+      margin-right: -70px;
+    }
+
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  .button-previous {
+    color: $white;
+
+    &::before {
+      content: "\e902";
+      vertical-align: sub;
+      font-family: 'icomoon';
+      color: $charcoal;
+      line-height: 0.5;
+      font-size: 60px;
+      margin-left: -25px;
+    }
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}
