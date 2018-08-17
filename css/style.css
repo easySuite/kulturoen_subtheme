@@ -7545,7 +7545,7 @@ html .not-front #page .content-wrapper .content-inner {
     .panel-pane-inner .container {
       margin-top: 30px; } }
   @media screen and (min-width: 1200px) {
-    .panel-pane-inner .container {
+    .front .panel-pane-inner .container {
       margin-top: 0; } }
 
 .html.not-front #page .pane-page-content .ding2-site-template .content-wrapper {
@@ -7654,6 +7654,9 @@ a:link {
   font-size: 60px;
   margin-left: -25px;
   float: left; }
+
+input[type="submit"] {
+  background-color: #a6d6cc; }
 
 .node-ding-event img {
   display: block;
@@ -9549,6 +9552,8 @@ table#calendar {
           #page .site-header .navigation-wrapper .navigation-inner .pane-search-form .form-actions {
             height: 70px;
             width: auto; } }
+        .page-user-login #page .site-header .navigation-wrapper .navigation-inner .pane-search-form .form-actions input[type="submit"] {
+          border-radius: 0; }
         @media screen and (min-width: 1200px) {
           #page .site-header .navigation-wrapper .navigation-inner .pane-search-form .form-actions {
             height: 55px;
