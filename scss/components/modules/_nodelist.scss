@@ -151,10 +151,25 @@
     padding: 0 5px;
     border-radius: 3px;
     width: auto;
+    margin-right: 5px;
   }
 
-  .event-list-fulldate,.label {
-    display: inline-block;
+  .event-list-fulldate,
+  .label {
+    float: left;
+  }
+
+  .item .item-details {
+    position: relative;
+    padding-bottom: 30px;
+
+    &:after { 
+      content: ".";
+      visibility: hidden;
+      display: block;
+      height: 0;
+      clear: both;
+    }
   }
 
   span.item-library,
@@ -170,6 +185,9 @@
 
   .more {
     display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
   }
 
   .event-list-leaf ~ .item .item-list-image,

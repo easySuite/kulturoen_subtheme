@@ -2,12 +2,18 @@
    ========================================================================== */
 
 .pane-ding-event-calendar-ding-event-calendar {
+  .slick-prev:before, .slick-next:before {
+    color: $color-primary;
+    font-size: 30px;
+    position: relative;
+    top: -11px;
+  }
   #eventsCalendar {
 
     h2 {
       text-transform: lowercase;
       color: $charcoal;
-      font-family: SourceSansProSemibold;
+      font-family: $font-family-bold;
     }
 
     #calendar{
@@ -54,32 +60,77 @@
       .event-item {
         background-color: $grey-dark;
         border-bottom: 1px solid #bbbbbb;
+
+        &:after{
+          content: ".";
+          visibility: hidden;
+          display: block;
+          height: 0;
+          clear: both;
+        }
       }
 
       .event-time {
         color: $white;
-        line-height: 3;
+        line-height: 2.5;
+        float: left;
+        font-size: $font-size-normal;
       }
 
-      .event-location,
+      .info-event .event-location {
+        float: left;
+        color: $white;
+        margin-right: 10px;
+        width: auto;
+
+        a {
+          color: $white;
+          line-height: 2.5;
+          font-family: $font-family-bold;
+          font-size: $font-size-normal;
+        }
+
+        &:before {
+          content: "(";
+          color: $white;
+        }
+
+        &:after {
+          content: ")";
+          color: $white;
+        }
+      }
+
       .event-category {
         display: none;
       }
 
       .event-title {
-        max-width: 80%;
+        float: left;
+        width: auto;
+
         a {
           color: $color-primary;
           text-decoration: none;
-          font-family: SourceSansProSemibold;
+          font-family: $font-family-bold;
+          font-size: $font-size-normal;
+
         }
+      }
+
+      .info-event {
+        float: left;
+        width: auto;
       }
     }
 
     .more-link  {
-      font-family: SourceSansProSemibold;
+      display: block;
+      float: none;
+      font-family: $font-family-bold;
       background-color: transparent;
       color: $charcoal;
+      text-align: right;
 
       &:hover {
         text-decoration: underline;
