@@ -6673,6 +6673,13 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: normal; }
 
 @font-face {
+  font-family: 'SourceSansPro-Bold';
+  src: url("../fonts/SourceSansPro-Bold-webfont.eot");
+  src: url("../fonts/SourceSansPro-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Bold-webfont.woff") format("woff"), url("../fonts/SourceSansPro-Bold-webfont.ttf") format("truetype"), url("../fonts/SourceSansPro-Bold-webfont.svg#SourceSansPro-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'SourceSansProSemiboldItalic';
   src: url("../fonts/SourceSansPro-SemiboldIt-webfont.eot");
   src: url("../fonts/SourceSansPro-SemiboldIt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-SemiboldIt-webfont.woff") format("woff"), url("../fonts/SourceSansPro-SemiboldIt-webfont.ttf") format("truetype"), url("../fonts/SourceSansPro-SemiboldIt-webfont.svg#SourceSansProSemiboldItalic") format("svg");
@@ -7247,9 +7254,10 @@ input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active
     #page .main-menu-wrapper .main-menu a {
       color: #262626;
       text-transform: uppercase;
-      font-family: "SourceSansProSemibold";
+      font-family: "SourceSansPro-Bold";
       z-index: 1;
-      position: relative; }
+      position: relative;
+      font-size: 16px; }
       #page .main-menu-wrapper .main-menu a:hover {
         color: #a6d6cc; }
       #page .main-menu-wrapper .main-menu a.active-trail.active {
@@ -9230,7 +9238,8 @@ table#calendar {
   display: inline-block;
   border-radius: 3px;
   width: auto;
-  margin-right: 5px; }
+  margin-right: 10px;
+  padding: 0 5px; }
 
 .ding_nodelist-taxonomy .news .label {
   float: none; }
@@ -9259,7 +9268,8 @@ table#calendar {
 .ding_nodelist-taxonomy .more a {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
-  color: #262626; }
+  color: #262626;
+  margin-left: 5px; }
 
 .ding_nodelist-taxonomy .more {
   display: block;
