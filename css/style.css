@@ -9367,6 +9367,231 @@ table#calendar {
   .pane-instagram-block-instagram-block .ding-social-insta-item-image img {
     width: 100%; } }
 
+/* Calendar styles
+   ========================================================================== */
+#kultur-calendar td {
+  border-right: none; }
+
+#kultur-calendar .fc-toolbar {
+  position: relative;
+  z-index: 999; }
+
+#kultur-calendar .fc-month-view td.fc-widget-header {
+  display: block;
+  border: 0; }
+  #kultur-calendar .fc-month-view td.fc-widget-header div.fc-row {
+    border: none; }
+  #kultur-calendar .fc-month-view td.fc-widget-header th {
+    font-family: "SourceSansProLight";
+    font-size: 12px; }
+
+#kultur-calendar #kultur-libraries .form-type-checkbox {
+  position: relative;
+  outline: none;
+  vertical-align: baseline;
+  backface-visibility: hidden; }
+  #kultur-calendar #kultur-libraries .form-type-checkbox input {
+    cursor: pointer;
+    position: absolute;
+    top: 02px;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    outline: none;
+    width: 20px;
+    height: 20px; }
+
+#kultur-calendar .title,
+#kultur-calendar .amount,
+#kultur-calendar .event,
+#kultur-calendar .time {
+  font-family: "SourceSansProSemibold"; }
+
+#kultur-calendar .title {
+  font-size: 18px; }
+
+#kultur-calendar .fc-toolbar {
+  margin-bottom: 0; }
+
+#kultur-calendar .fc-center h2,
+#kultur-calendar #kultur-libraries label {
+  color: #262626;
+  text-transform: uppercase;
+  font-family: "SourceSansProSemibold"; }
+
+#kultur-calendar .fc-center h2 {
+  font-size: 30px;
+  margin: 0 35px; }
+
+#kultur-calendar .fc-day-grid-event {
+  font-family: "SourceSansProSemibold"; }
+
+#kultur-calendar table {
+  max-width: 1180px;
+  margin: 0 auto;
+  border-color: transparent; }
+  #kultur-calendar table table {
+    border-color: transparent; }
+    #kultur-calendar table table thead {
+      border-color: transparent; }
+      #kultur-calendar table table thead tr th {
+        border-color: transparent;
+        background-color: transparent;
+        text-transform: uppercase;
+        text-align: end;
+        color: #ababab; }
+  #kultur-calendar table thead td {
+    border-left: transparent;
+    border-right: transparent;
+    position: relative; }
+    #kultur-calendar table thead td > span {
+      position: absolute;
+      right: 0; }
+  #kultur-calendar table tbody td.fc-event-container {
+    padding-right: 35px;
+    position: relative;
+    top: 5px; }
+    #kultur-calendar table tbody td.fc-event-container .fc-content {
+      text-overflow: ellipsis;
+      color: #e7e6e6; }
+  #kultur-calendar table tbody td .fc-disabled-day {
+    background-color: #474747; }
+  #kultur-calendar table tbody td .fc-title {
+    font-family: "SourceSansProSemibold"; }
+  #kultur-calendar table .fc-day-number {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    margin-right: 5px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 1.3; }
+  #kultur-calendar table .fc-sat.fc-past,
+  #kultur-calendar table .fc-sun.fc-past {
+    background-color: #bdbdbd; }
+  #kultur-calendar table .fc-sat.fc-future,
+  #kultur-calendar table .fc-sun.fc-future {
+    background-color: #919191; }
+  #kultur-calendar table .fc-past {
+    background-color: #cccccc;
+    border-right: 1px solid #e0e0e0; }
+    #kultur-calendar table .fc-past .fc-day-number {
+      background-color: #8a8a8a;
+      color: #bababa;
+      font-family: "SourceSansProSemibold"; }
+  #kultur-calendar table .fc-future {
+    background-color: #ababab;
+    border-right: 1px solid #e0e0e0; }
+    #kultur-calendar table .fc-future .fc-day-number {
+      background-color: #474747;
+      color: #ffffff;
+      font-family: "SourceSansProSemibold"; }
+  #kultur-calendar table .fc-today.fc-state-highlight {
+    background-color: #a6d6cc; }
+    #kultur-calendar table .fc-today.fc-state-highlight .fc-day-number {
+      background-color: #ffffff;
+      color: #262626;
+      font-family: "SourceSansProSemibold"; }
+  #kultur-calendar table .kultur-past-event span {
+    color: #d9d8d8; }
+    #kultur-calendar table .kultur-past-event span.event-amount {
+      padding-right: 5px;
+      color: #e1e1e1;
+      font-family: "SourceSansProSemibold";
+      float: left; }
+  #kultur-calendar table .kultur-past-event.other-info span {
+    color: #93bbbf;
+    font-family: "SourceSansProSemibold"; }
+  #kultur-calendar table .kultur-future-event span {
+    color: #e7e6e6; }
+    #kultur-calendar table .kultur-future-event span.event-amount {
+      padding-right: 5px;
+      color: #fafafa;
+      font-family: "SourceSansProSemibold";
+      float: left; }
+  #kultur-calendar table .kultur-future-event.other-info span {
+    color: #196d5b;
+    font-family: "SourceSansProSemibold"; }
+  #kultur-calendar table .kultur-today-event span {
+    color: #474747; }
+    #kultur-calendar table .kultur-today-event span.event-amount {
+      padding-right: 5px;
+      width: 20px;
+      font-family: "SourceSansProSemibold";
+      float: left; }
+  #kultur-calendar table .kultur-today-event.other-info span {
+    font-family: "SourceSansProSemibold"; }
+  #kultur-calendar table .fc-event-container a {
+    background-color: transparent;
+    border-color: transparent; }
+
+.fc table {
+  border-collapse: initial; }
+
+.fc-unthemed th,
+.fc-unthemed td,
+.fc-unthemed thead,
+.fc-unthemed tbody,
+.fc-unthemed .fc-divider,
+.fc-unthemed .fc-row,
+.fc-unthemed .fc-content,
+.fc-unthemed .fc-popover,
+.fc-unthemed .fc-list-view,
+.fc-unthemed .fc-list-heading td {
+  border-color: #e0e0e0; }
+
+#kultur_calendar-day {
+  background: #474747; }
+  #kultur_calendar-day .kultur_calendar-title {
+    padding-left: 25px;
+    position: relative;
+    color: #ffffff;
+    padding-top: 7px;
+    font-size: 16px; }
+    #kultur_calendar-day .kultur_calendar-title .day-number {
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      background: #a6d6cc;
+      width: 25px;
+      height: 25px;
+      border-radius: 5px;
+      text-align: center;
+      color: #262626;
+      font-family: "SourceSansProSemibold"; }
+  #kultur_calendar-day .kultur_calendar-body {
+    position: relative; }
+    #kultur_calendar-day .kultur_calendar-body .row, #kultur_calendar-day .kultur_calendar-body .footer-inner, #kultur_calendar-day .kultur_calendar-body .kultur_calendar-title > a,
+    #kultur_calendar-day .kultur_calendar-body > a {
+      color: #ffffff;
+      font-family: "SourceSansProSemibold";
+      padding-top: 20px; }
+      #kultur_calendar-day .kultur_calendar-body .row .amount, #kultur_calendar-day .kultur_calendar-body .footer-inner .amount, #kultur_calendar-day .kultur_calendar-body .kultur_calendar-title > a .amount, #kultur_calendar-day .kultur_calendar-body > a .amount {
+        position: absolute;
+        padding-left: 10px;
+        font-family: "SourceSansProSemibold"; }
+      #kultur_calendar-day .kultur_calendar-body .row .title, #kultur_calendar-day .kultur_calendar-body .footer-inner .title, #kultur_calendar-day .kultur_calendar-body .kultur_calendar-title > a .title, #kultur_calendar-day .kultur_calendar-body > a .title {
+        padding-left: 30px; }
+        #kultur_calendar-day .kultur_calendar-body .row .title .other, #kultur_calendar-day .kultur_calendar-body .footer-inner .title .other, #kultur_calendar-day .kultur_calendar-body .kultur_calendar-title > a .title .other, #kultur_calendar-day .kultur_calendar-body > a .title .other {
+          padding: 0; }
+      #kultur_calendar-day .kultur_calendar-body .row .title a, #kultur_calendar-day .kultur_calendar-body .footer-inner .title a, #kultur_calendar-day .kultur_calendar-body .kultur_calendar-title > a .title a, #kultur_calendar-day .kultur_calendar-body > a .title a,
+      #kultur_calendar-day .kultur_calendar-body .row .event a,
+      #kultur_calendar-day .kultur_calendar-body .footer-inner .event a,
+      #kultur_calendar-day .kultur_calendar-body .kultur_calendar-title > a .event a,
+      #kultur_calendar-day .kultur_calendar-body > a .event a {
+        color: #a6d6cc;
+        font-family: "Source Sans Pro", sans-serif;
+        padding-left: 30px;
+        display: inline-block; }
+      #kultur_calendar-day .kultur_calendar-body .row .time, #kultur_calendar-day .kultur_calendar-body .footer-inner .time, #kultur_calendar-day .kultur_calendar-body .kultur_calendar-title > a .time, #kultur_calendar-day .kultur_calendar-body > a .time {
+        display: inline-block;
+        float: right;
+        margin-right: 30px; }
+
+.fc-basic-view {
+  padding-bottom: 30px; }
+
 /* Event calendar styles
    ========================================================================== */
 .pane-ding-event-calendar-ding-event-calendar .slick-prev:before, .pane-ding-event-calendar-ding-event-calendar .slick-next:before {
