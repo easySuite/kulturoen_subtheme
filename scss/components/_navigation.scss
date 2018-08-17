@@ -534,7 +534,7 @@ html .not-front #page .content-wrapper .content-inner {
 
     .front & {
       @media #{$wide} {
-        diffmargin-top: 0;
+        margin-top: 0;
       }
     }
   }
