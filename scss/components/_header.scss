@@ -139,6 +139,12 @@
             width: auto;
           }
 
+          .page-user-login & {
+            input[type="submit"] {
+              border-radius: 0;
+            }
+          }
+
           @media #{$wide} {
             height: 55px;
             float: right;

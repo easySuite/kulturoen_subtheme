@@ -75,3 +75,7 @@
     float: left;
   }
 }
+
+input[type="submit"] {
+  background-color: $color-primary;
+}

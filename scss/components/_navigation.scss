@@ -532,8 +532,10 @@ html .not-front #page .content-wrapper .content-inner {
       margin-top: 30px;
     }
 
-    @media #{$wide} {
-      margin-top: 0;
+    .front & {
+      @media #{$wide} {
+        margin-top: 0;
+      }
     }
   }
 }
