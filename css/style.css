@@ -7546,7 +7546,7 @@ html .not-front #page .content-wrapper .content-inner {
       margin-top: 30px; } }
   @media screen and (min-width: 1200px) {
     .front .panel-pane-inner .container {
-      margin-top: 0; } }
+      diffmargin-top: 0; } }
 
 .html.not-front #page .pane-page-content .ding2-site-template .content-wrapper {
   background: #ffffff; }
