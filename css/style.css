@@ -9434,7 +9434,7 @@ table#calendar {
     width: auto; }
   .pane-ding-event-calendar-ding-event-calendar #eventList .more-link {
     display: block;
-    float: none;
+    float: none !important;
     font-family: "SourceSansProSemibold";
     background-color: transparent;
     color: #262626;

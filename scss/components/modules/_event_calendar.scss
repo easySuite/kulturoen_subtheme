@@ -126,7 +126,7 @@
 
     .more-link  {
       display: block;
-      float: none;
+      float: none !important;
       font-family: $font-family-bold;
       background-color: transparent;
       color: $charcoal;
