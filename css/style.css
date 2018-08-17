@@ -9815,8 +9815,8 @@ table#calendar {
               height: 100%;
               width: 100%; } }
 
-.not-front ul.main-menu ul.main-menu {
+.not-front #page ul.main-menu ul.main-menu {
   display: none; }
 
-.not-front ul.main-menu li .transform-main-menu {
+.not-front #page ul.main-menu li .transform-main-menu {
   display: none; }
