@@ -9131,6 +9131,19 @@ table#calendar {
   color: #262626;
   line-height: 1.8; }
 
+.ding_nodelist.ding_nodelist-carousel .slick-dots {
+  width: auto;
+  height: 30px; }
+  .ding_nodelist.ding_nodelist-carousel .slick-dots li a {
+    background-color: #ffffff;
+    color: #262626; }
+  .ding_nodelist.ding_nodelist-carousel .slick-dots li.slick-active a {
+    background: #a6d6cc; }
+
+.ding_nodelist.ding_nodelist-carousel .slick-arrow {
+  color: #a6d6cc;
+  z-index: 1; }
+
 .ding_nodelist .pagination {
   top: 30px; }
   .ding_nodelist .pagination a {
@@ -9318,7 +9331,9 @@ table#calendar {
     margin-top: 10px;
     width: 50px;
     height: 30px;
-    border: 1px solid #f1f2f2; }
+    border: 1px solid #f1f2f2;
+    position: relative;
+    margin: 0 10px; }
     .pane-instagram-block-instagram-block .ding-social-insta-slick-controls .insta-prev.slick-arrow[aria-disabled="false"]:before,
     .pane-instagram-block-instagram-block .ding-social-insta-slick-controls .insta-next.slick-arrow[aria-disabled="false"]:before {
       color: #262626;
