@@ -47,22 +47,39 @@ a:link {
 }
 
 .pane-node-field-ding-event-materials {
-  display: none;
 }
 
 #page .site-header .topbar-inner .site-name-container.logo-container  {
   .site-name {
     color: $white;
     display: block;
-    margin-left: 95px;
-    top: 21px;
+    margin-left: 180px;
+    top: 0px;
     position: relative;
     z-index: 1;
+    font-size: 20px;
 
     @media #{$wide}, #{$normal} {
-    margin-left: 125px;
+    margin-left: 170px;
     top: 0;
+    font-size: 20px;
     }
   }
 }
 
+.content-inner .field-name-field-culture-lists-control h2,
+.content-inner .pane-ding-related-content-news-events h2 {
+  margin-bottom: 5px;
+}
+
+html #page .content-wrapper .content-inner .row:last-child {
+  padding-top: 0;
+}
+
+#page .view-content button.slick-arrow {
+  color: transparent;
+}
+
+.card-body {
+  height: 270px;
+}

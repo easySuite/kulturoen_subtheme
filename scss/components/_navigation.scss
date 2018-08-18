@@ -63,7 +63,7 @@
     }
 
     @media #{$wide} {
-      top: 0;
+      top: 5px;
       margin-left: 5px;
       position: relative;
       padding: 10px 0 10px 30px
@@ -136,7 +136,7 @@
     margin-right: -10px;
 
     li {
-      padding: 20px 20px 20px 0px;
+      padding: 26px 20px 20px 0px;
       border-right: transparent;
       margin-right: 0;
 
@@ -169,7 +169,8 @@
       }
 
       a {
-        font-size: 14px;
+        font-size: 16px;
+        font-family: $font-family-bold;
 
         &:hover {
           text-decoration: none;
@@ -340,8 +341,10 @@
     img {
       margin-top: 0;
       position: absolute;
-      top: 35px;
-      left: -25px;
+      top: 0px;
+      left: -55px;
+      max-height: initial;
+      max-width: initial;
 
       @media #{$wide}, #{$normal} {
        left: -65px;
@@ -561,7 +564,7 @@ html .not-front #page .content-wrapper .content-inner {
 .logged-in .pane-page-tabs {
   position: relative;
   margin-top: 20px;
-  z-index: 1;
+  z-index: 10;
 }
 
 .logged-in .pane-content ul.menu {
