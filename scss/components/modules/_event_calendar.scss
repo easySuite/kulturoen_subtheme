@@ -3,11 +3,31 @@
 
 .pane-ding-event-calendar-ding-event-calendar {
   .slick-prev:before, .slick-next:before {
-    color: $color-primary;
+    color: $charcoal;
     font-size: 30px;
     position: relative;
     top: -11px;
+    background: #a6d6cc;
+    border-radius: 20px;
+    content: "\e900";
+    font-family: 'icomoon';
+    font-weight: 800;
   }
+
+  .slick-prev:before {
+    transform: rotate(90deg);
+    display: inline-block;
+  }
+
+  .slick-next:before {
+    transform: rotate(-90deg);
+    display: inline-block;
+  }
+
+  #eventsCalendar .navi-heading h2 {
+    margin-bottom: 0;
+  }
+
   #eventsCalendar {
 
     h2 {
@@ -19,24 +39,29 @@
     #calendar{
       .calendar-row {
         .calendar-day-head {
-          background-color: $grey-medium;
+          background-color: #d5d5d5;
           color: $charcoal;
           text-transform: lowercase;
         }
 
         .calendar-day-np {
-          background-color: $grey-light;
+          background-color: #f3f3f2;
         }
 
         .calendar-day {
-          background-color: $grey;    
+          background-color: #d5d5d5;    
           color: $white;
           text-decoration: underline;
           border-color: #bbbbbb;
+          text-decoration: none;
         }
 
         .has-events {
-          background-color: $grey-dark;
+          background-color: #999998;
+
+          a {
+            text-decoration: none;
+          }
         }
 
         td.calendar-day.has-events.selected {
@@ -58,7 +83,7 @@
     }
     .event-items {
       .event-item {
-        background-color: $grey-dark;
+        background-color: #999999;
         border-bottom: 1px solid #bbbbbb;
 
         &:after{
@@ -72,22 +97,26 @@
 
       .event-time {
         color: $white;
-        line-height: 2.5;
+        padding: 7px 0;
         float: left;
-        font-size: $font-size-normal;
+        font-size: 16px;
+      }
+
+      .info-event .event-time {
+        font-weight: normal;
       }
 
       .info-event .event-location {
-        float: left;
+        float: right;
         color: $white;
         margin-right: 10px;
         width: auto;
+        padding: 7px 0;
 
         a {
           color: $white;
-          line-height: 2.5;
-          font-family: $font-family-bold;
-          font-size: $font-size-normal;
+          font-family: $font-family;
+          font-size: 16px;
         }
 
         &:before {
@@ -107,20 +136,21 @@
 
       .event-title {
         float: left;
-        width: auto;
+        max-width: 60%;
+        margin-right: 5px;
 
         a {
           color: $color-primary;
           text-decoration: none;
-          font-family: $font-family-bold;
-          font-size: $font-size-normal;
+          font-family: $font-family-bolder;
+          font-size: $font-size-max;
 
         }
       }
 
       .info-event {
         float: left;
-        width: auto;
+        max-width: 100%;
       }
     }
 
