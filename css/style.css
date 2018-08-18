@@ -9830,3 +9830,56 @@ table#calendar {
 
 .not-front #page ul.main-menu li .transform-main-menu {
   display: none; }
+
+.content-wrapper input[type="text"],
+.content-wrapper input[type="password"],
+.content-wrapper input[type="email"] {
+  background-color: #e5e5e5; }
+
+.content-wrapper input[type=submit] {
+  width: auto;
+  margin-bottom: 20px; }
+
+.content-wrapper .form-item {
+  max-width: 400px; }
+
+.node-ding-event .webform-client-form {
+  margin-bottom: 30px; }
+
+.form-item-search-block-form {
+  margin: 0; }
+  .form-item-search-block-form > label {
+    display: none; }
+  .form-item-search-block-form input[type="text"].form-autocomplete {
+    background-image: none; }
+    .form-item-search-block-form input[type="text"].form-autocomplete::-ms-clear {
+      display: none; }
+
+.panels-ipe-form-container input[type=submit] {
+  width: auto; }
+
+.modal-content input[type=email],
+.modal-content input[type=password],
+.modal-content input[type=text] {
+  width: auto;
+  background-color: #e5e5e5; }
+
+.modal-content input[type=checkbox] + label,
+.modal-content input[type=radio] + label {
+  min-height: 28px; }
+
+.modal-content input[type=submit] {
+  max-width: 200px;
+  margin-bottom: 10px; }
+
+.modal-content .form-type-select {
+  max-width: 400px; }
+
+.modal-content .option-text-aligner .dependent-options {
+  padding-left: 0; }
+
+.modal-content .option-text-aligner .form-type-select {
+  min-width: 150px; }
+
+.modal-content .description {
+  margin-bottom: 10px; }
