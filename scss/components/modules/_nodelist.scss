@@ -12,11 +12,17 @@
 .ding_nodelist {
   .event-time .event-day,
   .pagination a.selected,
-  .field-name-field-ding-event-category {
-   background-color: $color-primary;
+  .field-name-field-ding-event-category,
+  .field-name-field-ding-news-category {
     color: $charcoal;
     font-family: $font-family-bold;
     text-transform: uppercase;
+
+    .field-item.even {
+      background-color: $color-primary;
+      padding: 3px 5px;
+      border-radius: 4px;
+    }
   }
 
   &.ding_nodelist-carousel {
@@ -25,10 +31,36 @@
       line-height: 1.8;
     }
 
+    .field-name-field-ding-event-category,
+    .field-name-field-ding-news-category {
+      margin-left: 0;
+
+      .field-item.even {
+        max-width: 160px;
+      }
+    }
+
+    .node, .label,
+    .label-wrapper {
+      padding-left: 20px;
+    }
+   .event-time {
+     margin-left: 14px;
+   }
+    .event-day {
+      font-family: $font-family-bolder;
+      padding-top: 3px;
+      font-size: 14px;
+    }
+
     .slick-dots {
       width: auto;
       height: 30px;
+      margin-right: 15px;
 
+      li {
+        margin: 10px 10px 0 10px;
+      }
 
        li a {
         background-color: $white;
@@ -58,22 +90,20 @@
     }
   }
 
-  .event-day {
-    font-family: $font-family-bold;
-  }
-
   .event-date,
   .event-month {
     color: $charcoal;
     text-transform: uppercase;
   }
 
-  .event-date{
+  .event-date {
     font-family: $font-family-bold;
+    font-size: 30px;
   }
 
+
   .event-time {
-    width: 50px;
+    width: 55px; 
 
     .event-month {
     font-size: 9px;
@@ -89,11 +119,12 @@
   .library a {
     color: $color-primary;
     text-decoration: underline;
-    font-family: $font-family-bold;
+    font-family: $font-family-bolder;
+    font-size: 20px;
   }
 
   h3.node-title {
-    font-size: 40px;
+    font-size: 50px;
     text-decoration: none;
     text-transform: uppercase;
   }
@@ -103,8 +134,8 @@
   }
 
   span {
-    font-family: $font-family-bold;
-    font-size: $font-size-max;
+    font-family: $font-family-bolder;
+    font-size: 22px;
   }
 
   &.ding_nodelist-taxonomy .item {
@@ -118,12 +149,12 @@
     .item-date,
     .library a,
     .item-price {
-      font-size: $font-size-max;
+      font-size: 20px;
       font-family: $font-family-bold;
     }
 
     p {
-      font-size: $font-size-max;
+      font-size: 20px;
     }
 
     .node-title a {
@@ -158,6 +189,10 @@
     display: none;
   }
 
+  .item-byline {
+    margin-bottom: 0;
+  }
+
   .item {
     position: relative;
   }
@@ -171,16 +206,24 @@
     border-radius: 3px;
     width: auto;
     margin-right: 10px;
-    padding: 0 5px;
+    //padding: 0 5px;
   }
 
   .news .label {
     float: none;
   }
 
+  .field-name-field-ding-news-category {
+    padding-left: 0;
+  }
+
   .event-list-fulldate,
   .label {
     float: left;
+  }
+
+  .item-library {
+    margin-left: 5px;
   }
 
   .item .item-details,
@@ -206,7 +249,6 @@
     font-family: $font-family;
     font-size: 16px;
     color: $charcoal;
-    margin-left: 5px;
   }
 
   .more {
