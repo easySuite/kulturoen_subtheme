@@ -44,11 +44,13 @@
 
 
 .pager-last {
+  float: left;
   a:link {
      color: transparent;
+     margin-left: -40px;
   }
-  &::before {
-    content: "\e904";
+  a::before {
+    content: "\e902";
     vertical-align: sub;
     font-family: 'icomoon';
     color: $charcoal;
@@ -60,12 +62,13 @@
 }
 
 .pager-next {
+  float: right;
   a:link {
     color: transparent;
   }
 
-  &::before {
-    content: "\e902";
+  a::before {
+    content: "\e904";
     vertical-align: sub;
     font-family: 'icomoon';
     color: $charcoal;
@@ -74,6 +77,18 @@
     margin-left: -25px;
     float: left;
   }
+}
+
+.pager-previous,
+.pager-first {
+  display: none;
+  a:link {
+    display: none;
+  }
+}
+.pager-current {
+  text-decoration: underline;
+  font-family: $font-family-bold;
 }
 
 input[type="submit"] {

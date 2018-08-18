@@ -46,7 +46,9 @@ a:link {
   }
 }
 
-.pane-node-field-ding-event-materials {
+.pane-node-field-ding-event-materials,
+.pane-node-field-ding-news-materials {
+  display: none;
 }
 
 #page .site-header .topbar-inner .site-name-container.logo-container  {

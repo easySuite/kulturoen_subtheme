@@ -7327,12 +7327,14 @@ body .search-overlay--wrapper {
         padding: 10px 0 10px 30px; } }
     #page .main-menu-wrapper .main-menu li {
       display: block;
-      width: 100%; }
+      width: 100%;
+      padding-bottom: 13px; }
       @media screen and (min-width: 1200px), screen and (min-width: 992px) {
         #page .main-menu-wrapper .main-menu li {
           margin-right: 25px;
           display: inline-block;
-          width: auto; } }
+          width: auto;
+          padding-bottom: 0; } }
     #page .main-menu-wrapper .main-menu a {
       color: #262626;
       text-transform: uppercase;
@@ -7684,6 +7686,10 @@ a:link {
     color: #262625;
     text-decoration: none; }
 
+.pane-node-field-ding-event-materials,
+.pane-node-field-ding-news-materials {
+  display: none; }
+
 #page .site-header .topbar-inner .site-name-container.logo-container .site-name {
   color: #ffffff;
   display: block;
@@ -7735,31 +7741,45 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
     top: -18px;
     right: -47px; }
 
-.pager-last a:link {
-  color: transparent; }
-
-.pager-last::before {
-  content: "\e904";
-  vertical-align: sub;
-  font-family: 'icomoon';
-  color: #262626;
-  line-height: 0.5;
-  font-size: 60px;
-  margin-right: 0;
-  float: right; }
-
-.pager-next a:link {
-  color: transparent; }
-
-.pager-next::before {
-  content: "\e902";
-  vertical-align: sub;
-  font-family: 'icomoon';
-  color: #262626;
-  line-height: 0.5;
-  font-size: 60px;
-  margin-left: -25px;
+.pager-last {
   float: left; }
+  .pager-last a:link {
+    color: transparent;
+    margin-left: -40px; }
+  .pager-last a::before {
+    content: "\e902";
+    vertical-align: sub;
+    font-family: 'icomoon';
+    color: #262626;
+    line-height: 0.5;
+    font-size: 60px;
+    margin-right: 0;
+    float: right; }
+
+.pager-next {
+  float: right; }
+  .pager-next a:link {
+    color: transparent; }
+  .pager-next a::before {
+    content: "\e904";
+    vertical-align: sub;
+    font-family: 'icomoon';
+    color: #262626;
+    line-height: 0.5;
+    font-size: 60px;
+    margin-left: -25px;
+    float: left; }
+
+.pager-previous,
+.pager-first {
+  display: none; }
+  .pager-previous a:link,
+  .pager-first a:link {
+    display: none; }
+
+.pager-current {
+  text-decoration: underline;
+  font-family: "SourceSansProSemibold"; }
 
 input[type="submit"] {
   background-color: #a6d6cc; }
@@ -9891,12 +9911,16 @@ table#calendar {
       height: 70px;
       position: absolute;
       top: 30px; }
+      .not-front #page .site-header .navigation-wrapper .navigation-inner {
+        top: 20px; }
       @media screen and (min-width: 767px) {
         #page .site-header .navigation-wrapper .navigation-inner {
           left: 2px;
           position: relative;
           height: 70px;
-          top: 8px; } }
+          top: 10px; }
+          .not-front #page .site-header .navigation-wrapper .navigation-inner {
+            top: -15px; } }
       @media screen and (min-width: 1200px) {
         #page .site-header .navigation-wrapper .navigation-inner {
           position: relative;
@@ -9905,9 +9929,23 @@ table#calendar {
           left: -3px; } }
       #page .site-header .navigation-wrapper .navigation-inner .navbar {
         position: initial; }
+        @media screen and (min-width: 767px) {
+          #page .site-header .navigation-wrapper .navigation-inner .navbar.navbar-expand-lg {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 999;
+            background: #e8e6e7;
+            left: 0; }
+            #page .site-header .navigation-wrapper .navigation-inner .navbar.navbar-expand-lg .main-menu {
+              margin-top: -20px; } }
         @media screen and (min-width: 1200px), screen and (min-width: 992px) {
           #page .site-header .navigation-wrapper .navigation-inner .navbar {
-            position: relative; } }
+            position: relative; }
+            #page .site-header .navigation-wrapper .navigation-inner .navbar.navbar-expand-lg {
+              width: auto; }
+              #page .site-header .navigation-wrapper .navigation-inner .navbar.navbar-expand-lg .main-menu {
+                margin-top: 0; } }
       #page .site-header .navigation-wrapper .navigation-inner .pane-search-form {
         float: right;
         top: -10px;
