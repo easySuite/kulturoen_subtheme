@@ -7712,7 +7712,12 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
   color: transparent; }
 
 .card-body {
-  height: 270px; }
+  height: 285px;
+  position: relative; }
+  .card-body .button.btn, .card-body .button.more-link, .card-body .field-type-culture-frontend-lists-control .slick-slider .button.slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .card-body .button.slick-arrow.slick-prev, .card-body .field-type-culture-frontend-lists-control .slick-slider .button.slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .card-body .button.slick-arrow.slick-next, .card-body .page-contact .col-md-8 form input.button#edit-submit, .page-contact .col-md-8 form .card-body input.button#edit-submit {
+    position: absolute;
+    bottom: 15px;
+    right: 15px; }
 
 .field-slideshow.field-slideshow-processed {
   width: auto !important;
