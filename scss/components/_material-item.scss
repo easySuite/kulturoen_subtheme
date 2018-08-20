@@ -3,6 +3,7 @@
   position: relative;
   min-height: 418px;
   max-height: 418px;
+  margin-bottom: 20px;
 
   .field-items:first {
     height: auto;
@@ -16,13 +17,17 @@
   .slick-next {
     position: absolute;
     top: -60px;
-    right: 35px;
+    right: 80px;
     width: 70px;
     height: 50px;
     background: $color-primary;
     border: none;
     color: transparent;
     outline: none;
+
+    @media #{$wide}, #{$normal} {
+      right: 35px;
+    }
 
     &::before {
       content: "\e904";
@@ -41,12 +46,18 @@
    color: transparent;
     position: absolute;
     top: -60px;
-    right: 120px;
+    right: 0px;
+    left: 80px;
     width: 70px;
     height: 50px;
     background: $color-primary;
     border: none;
     outline: none;
+
+    @media #{$wide}, #{$normal} {
+      right: 120px;
+      left: auto;
+    }
 
     &::before {
       content: "\e902";
@@ -59,7 +70,6 @@
       left: 0;
       right: 0;
     }
-
   }
 
   &:after{
@@ -74,9 +84,13 @@
     font-size: 40px;
     line-height: 44px;
     color: $charcoal;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     margin-top: 20px;
     font-family: $font-family-bold;
+
+    @media #{$wide}, #{$normal} {
+      margin-bottom: 40px;
+    }
   }
 
   .field-item {
@@ -87,60 +101,105 @@
     background: $grey-dark;
     width: 250px;
     height: 345px;
-    margin-right: 20px;
-    margin-bottom: 10px;
+    margin: 0 33px;
     float: left;
 
-    // &:hover {
-    //   width: 600px;
-    //   .group-text {
-    //     position: absolute;
-    //     margin-left: 250px;
-    //     width: 350px;
-    //     height: 345px;
-    //     background-color: black;
-    //     z-index: 5;
-    //   }
-    // }
-  }
-  .ting-cover {
-    height: 345px;
-    z-index: 0;
-    img {
+    .group-text {
+      margin: 0 33px;
+    }
+
+    .ting-cover {
       height: 345px;
-      width: 250px;
+      z-index: 0;
+      img {
+        height: 345px;
+        width: 250px;
+      }
     }
-  }
-
-  .field-name-ting-abstract {
-    display: none;
-  }
-  .ding-rating{
-    display: none;
-  }
-
-  .group-text {
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 250px;
-    position: absolute;
-    color: $grey;
-    font-size: 14px;
-    padding-left: 5px;
-
-    background: -moz-linear-gradient(top, black 34%, #1f1b1b 58%, rgba(229,229,229,0.13) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, black 34%, #1f1b1b 58%,rgba(229,229,229,0.13) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, black 34%, #1f1b1b 58%, rgba(229, 229, 229, 0.13) 103%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    
-    .field-item a.author {
-      color: $grey;
-    }
-
-    h2 {
-      font-size: 16px;
-    }
-  }
   
+    .read-more-text {
+      width: 250px;
+      height: 345px;
+      position: absolute;
+      top: 0;
+    }
+  
+    .field-name-ting-abstract {
+      display: none;
+    }
+    .ding-rating{
+      display: none;
+    }
+  
+    .group-text {
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 250px;
+      position: absolute;
+      color: $grey;
+      font-size: 14px;
+      padding-left: 5px;
+      height: 150px;
+      background: -moz-linear-gradient(top, black 34%, #1f1b1b 58%, rgba(177, 165, 165, 0.13) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, black 34%, #1f1b1b 58%,rgba(177, 165, 165, 0.13)  100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, black 34%, #1f1b1b 58%, rgba(177, 165, 165, 0.13)  103%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      
+      .field-item a.author {
+        color: $grey;
+      }
+  
+      h2 {
+        font-size: 16px;
+      }
+    }
+
+    @media #{$tablet} {
+      margin-right: 10px;
+      margin-left: 0;
+      margin-bottom: 10px;
+      width: 180px;
+      height: 300px;
+
+      .group-text {
+        margin-left: 0;
+        margin-right: 10px;
+        width: auto;
+      }
+
+      .read-more-text {
+        width: 180px;
+      }
+
+      .ting-cover {
+        img {
+          height: 300px;
+        }
+      }
+    }
+
+    @media #{$wide} {
+      margin-right: 20px;
+      margin-left: 0;
+      margin-bottom: 10px;
+      width: 250px;
+      height: 345px;
+
+      .group-text {
+        margin: 0;
+        width: 250px;
+      }
+
+      .read-more-text {
+        width: 250px;
+      }
+
+      .ting-cover {
+        img {
+          height: 345px;
+        }
+      }
+    }
+  }
 }

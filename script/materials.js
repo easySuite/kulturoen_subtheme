@@ -12,18 +12,32 @@
         }
       });
 
-      $(this).find('.field-items:first').slick({
-        autoplay: false,
-        // autoplaySpeed: 2000,
-        responsive: true,
-        dots: true,
-        infinite: true,
-        slidesToScroll: 1,
-        slidesToShow: 4,
-        customPaging: function(slick, index) {
-          return '<a>' + (index + 1) + '</a>';
-        }
-      });
+      if ($(window).width() >=  768) {
+        $(this).find('.field-items:first').slick({
+          autoplay: false,
+          responsive: true,
+          dots: true,
+          infinite: false,
+          slidesToScroll: 1,
+          slidesToShow: 4,
+          customPaging: function(slick, index) {
+            return '<a>' + (index + 1) + '</a>';
+          }
+        });
+      }
+      else {
+        $(this).find('.field-items:first').slick({
+          autoplay: false,
+          responsive: true,
+          dots: true,
+          infinite: false,
+          slidesToScroll: 1,
+          slidesToShow: 1,
+          customPaging: function(slick, index) {
+            return '<a>' + (index + 1) + '</a>';
+          }
+        });
+      }
     });
   });
 })(jQuery);
