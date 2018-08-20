@@ -7686,9 +7686,15 @@ a:link {
     color: #262625;
     text-decoration: none; }
 
-.pane-node-field-ding-event-materials,
-.pane-node-field-ding-news-materials {
-  display: none; }
+.ticket.button {
+  background: #a6d6cc;
+  padding: 15px 90px 15px 15px;
+  margin-top: 10px; }
+  .ticket.button:hover, .ticket.button:active, .ticket.button:focus, .ticket.button:visited {
+    color: #262626; }
+
+.field-group-format.group-left {
+  margin-bottom: 20px; }
 
 #page .site-header .topbar-inner .site-name-container.logo-container .site-name {
   color: #ffffff;
@@ -7716,7 +7722,35 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
   color: transparent; }
 
 .card-body {
-  height: 270px; }
+  height: 285px;
+  position: relative; }
+  .card-body .button.btn, .card-body .button.more-link, .card-body .field-type-culture-frontend-lists-control .slick-slider .button.slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .card-body .button.slick-arrow.slick-prev, .card-body .field-type-culture-frontend-lists-control .slick-slider .button.slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .card-body .button.slick-arrow.slick-next, .card-body .page-contact .col-md-8 form input.button#edit-submit, .page-contact .col-md-8 form .card-body input.button#edit-submit {
+    position: absolute;
+    bottom: 15px;
+    right: 15px; }
+
+.field-slideshow.field-slideshow-processed {
+  width: auto !important;
+  height: auto !important; }
+
+.share-buttons a {
+  margin-right: 10px; }
+
+.view-ding-related-content .views-row {
+  margin-bottom: 10px; }
+
+.field-type-culture-frontend-lists-control .view-content.row .views-row, .field-type-culture-frontend-lists-control .view-content.footer-inner .views-row, .field-type-culture-frontend-lists-control #kultur_calendar-day .kultur_calendar-title > a.view-content .views-row, #kultur_calendar-day .field-type-culture-frontend-lists-control .kultur_calendar-title > a.view-content .views-row, .field-type-culture-frontend-lists-control #kultur_calendar-day .kultur_calendar-body > a.view-content .views-row, #kultur_calendar-day .field-type-culture-frontend-lists-control .kultur_calendar-body > a.view-content .views-row {
+  margin-bottom: 10px; }
+
+.front .ding-campaign-wrapper {
+  width: auto; }
+  .front .ding-campaign-wrapper .node-ding-campaign {
+    margin-bottom: 20px; }
+
+.not-front .ding-campaign-wrapper {
+  max-width: 320px; }
+  .not-front .ding-campaign-wrapper .node-ding-campaign {
+    margin-bottom: 10px; }
 
 .btn, .more-link, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next, .page-contact .col-md-8 form input#edit-submit {
   background-color: #e5e5e5;
@@ -8944,6 +8978,22 @@ ul.main-menu > li, ul.secondary-menu > li {
   max-width: 160px;
   padding-left: 5px; }
 
+.ding_nodelist-carousel .slick-dots {
+  width: auto;
+  height: 30px;
+  margin-right: 15px; }
+  .ding_nodelist-carousel .slick-dots li {
+    margin: 10px 10px 0 10px; }
+  .ding_nodelist-carousel .slick-dots li a {
+    background-color: #ffffff;
+    color: #262626; }
+  .ding_nodelist-carousel .slick-dots li.slick-active a {
+    background: #a6d6cc; }
+
+.ding_nodelist-carousel .slick-arrow {
+  color: #a6d6cc;
+  z-index: 1; }
+
 .ding_nodelist-carousel .pagination a {
   line-height: 1.8;
   color: #262626;
@@ -9327,19 +9377,28 @@ table#calendar {
   color: #a6d6cc;
   text-decoration: underline;
   font-family: "SourceSansPro-Bold";
-  font-size: 20px; }
+  font-size: 18px; }
+  @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .ding_nodelist .library a {
+      font-size: 20px; } }
 
 .ding_nodelist h3.node-title {
-  font-size: 50px;
+  font-size: 35px;
   text-decoration: none;
   text-transform: uppercase; }
+  @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .ding_nodelist h3.node-title {
+      font-size: 50px; } }
 
 .ding_nodelist .article-info {
   background: transparent; }
 
 .ding_nodelist span {
   font-family: "SourceSansPro-Bold";
-  font-size: 22px; }
+  font-size: 18px; }
+  @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .ding_nodelist span {
+      font-size: 22px; } }
 
 .ding_nodelist.ding_nodelist-taxonomy .item {
   margin-bottom: 20px; }
@@ -9350,10 +9409,18 @@ table#calendar {
   .ding_nodelist .item .node .item-date,
   .ding_nodelist .item .node .library a,
   .ding_nodelist .item .node .item-price {
-    font-size: 20px;
+    font-size: 16px;
     font-family: "SourceSansProSemibold"; }
+    @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .ding_nodelist .item .node .item-date,
+      .ding_nodelist .item .node .library a,
+      .ding_nodelist .item .node .item-price {
+        font-size: 20px; } }
   .ding_nodelist .item .node p {
-    font-size: 20px; }
+    font-size: 16px; }
+    @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .ding_nodelist .item .node p {
+        font-size: 20px; } }
   .ding_nodelist .item .node .node-title a {
     font-family: "SourceSansProSemibold"; }
     .ding_nodelist .item .node .node-title a:hover {
@@ -9459,7 +9526,6 @@ table#calendar {
 /* Instagram styles
    ========================================================================== */
 .pane-instagram-block-instagram-block {
-  margin-bottom: 40px;
   margin-top: 20px; }
   .pane-instagram-block-instagram-block .ding-social-insta-item {
     min-height: 377px;
@@ -10078,3 +10144,185 @@ table#calendar {
 
 .modal-content .description {
   margin-bottom: 10px; }
+
+.pane-node-field-ding-event-materials,
+.pane-node-field-ding-news-materials {
+  position: relative;
+  min-height: 418px;
+  max-height: 418px;
+  margin-bottom: 20px; }
+  .pane-node-field-ding-event-materials .field-items:first,
+  .pane-node-field-ding-news-materials .field-items:first {
+    height: auto; }
+  .pane-node-field-ding-event-materials .slick-dots,
+  .pane-node-field-ding-news-materials .slick-dots {
+    color: transparent;
+    height: 0; }
+  .pane-node-field-ding-event-materials .slick-next,
+  .pane-node-field-ding-news-materials .slick-next {
+    position: absolute;
+    top: -60px;
+    right: 80px;
+    width: 70px;
+    height: 50px;
+    background: #a6d6cc;
+    border: none;
+    color: transparent;
+    outline: none; }
+    @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .pane-node-field-ding-event-materials .slick-next,
+      .pane-node-field-ding-news-materials .slick-next {
+        right: 35px; } }
+    .pane-node-field-ding-event-materials .slick-next::before,
+    .pane-node-field-ding-news-materials .slick-next::before {
+      content: "\e904";
+      vertical-align: sub;
+      font-family: 'icomoon';
+      color: #262626;
+      font-size: 60px;
+      position: absolute;
+      top: -17px;
+      left: 0;
+      right: 0; }
+  .pane-node-field-ding-event-materials .slick-prev,
+  .pane-node-field-ding-news-materials .slick-prev {
+    color: transparent;
+    position: absolute;
+    top: -60px;
+    right: 0px;
+    left: 80px;
+    width: 70px;
+    height: 50px;
+    background: #a6d6cc;
+    border: none;
+    outline: none; }
+    @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .pane-node-field-ding-event-materials .slick-prev,
+      .pane-node-field-ding-news-materials .slick-prev {
+        right: 120px;
+        left: auto; } }
+    .pane-node-field-ding-event-materials .slick-prev::before,
+    .pane-node-field-ding-news-materials .slick-prev::before {
+      content: "\e902";
+      vertical-align: sub;
+      font-family: 'icomoon';
+      color: #262626;
+      font-size: 60px;
+      position: absolute;
+      top: -17px;
+      left: 0;
+      right: 0; }
+  .pane-node-field-ding-event-materials:after,
+  .pane-node-field-ding-news-materials:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both; }
+  .pane-node-field-ding-event-materials h2.pane-title,
+  .pane-node-field-ding-news-materials h2.pane-title {
+    font-size: 40px;
+    line-height: 44px;
+    color: #262626;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    font-family: "SourceSansProSemibold"; }
+    @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .pane-node-field-ding-event-materials h2.pane-title,
+      .pane-node-field-ding-news-materials h2.pane-title {
+        margin-bottom: 40px; } }
+  .pane-node-field-ding-event-materials .field-item,
+  .pane-node-field-ding-news-materials .field-item {
+    display: inline-block;
+    position: relative; }
+  .pane-node-field-ding-event-materials .ting-object,
+  .pane-node-field-ding-news-materials .ting-object {
+    background: #808285;
+    width: 250px;
+    height: 345px;
+    margin: 0 33px;
+    float: left; }
+    .pane-node-field-ding-event-materials .ting-object .group-text,
+    .pane-node-field-ding-news-materials .ting-object .group-text {
+      margin: 0 33px; }
+    .pane-node-field-ding-event-materials .ting-object .ting-cover,
+    .pane-node-field-ding-news-materials .ting-object .ting-cover {
+      height: 345px;
+      z-index: 0; }
+      .pane-node-field-ding-event-materials .ting-object .ting-cover img,
+      .pane-node-field-ding-news-materials .ting-object .ting-cover img {
+        height: 345px;
+        width: 250px; }
+    .pane-node-field-ding-event-materials .ting-object .read-more-text,
+    .pane-node-field-ding-news-materials .ting-object .read-more-text {
+      width: 250px;
+      height: 345px;
+      position: absolute;
+      top: 0; }
+    .pane-node-field-ding-event-materials .ting-object .field-name-ting-abstract,
+    .pane-node-field-ding-news-materials .ting-object .field-name-ting-abstract {
+      display: none; }
+    .pane-node-field-ding-event-materials .ting-object .ding-rating,
+    .pane-node-field-ding-news-materials .ting-object .ding-rating {
+      display: none; }
+    .pane-node-field-ding-event-materials .ting-object .group-text,
+    .pane-node-field-ding-news-materials .ting-object .group-text {
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 250px;
+      position: absolute;
+      color: #e5e5e5;
+      font-size: 14px;
+      padding-left: 5px;
+      height: 150px;
+      background: -moz-linear-gradient(top, black 34%, #1f1b1b 58%, rgba(177, 165, 165, 0.13) 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, black 34%, #1f1b1b 58%, rgba(177, 165, 165, 0.13) 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, black 34%, #1f1b1b 58%, rgba(177, 165, 165, 0.13) 103%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+      .pane-node-field-ding-event-materials .ting-object .group-text .field-item a.author,
+      .pane-node-field-ding-news-materials .ting-object .group-text .field-item a.author {
+        color: #e5e5e5; }
+      .pane-node-field-ding-event-materials .ting-object .group-text h2,
+      .pane-node-field-ding-news-materials .ting-object .group-text h2 {
+        font-size: 16px; }
+    @media screen and (min-width: 767px) {
+      .pane-node-field-ding-event-materials .ting-object,
+      .pane-node-field-ding-news-materials .ting-object {
+        margin-right: 10px;
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 180px;
+        height: 300px; }
+        .pane-node-field-ding-event-materials .ting-object .group-text,
+        .pane-node-field-ding-news-materials .ting-object .group-text {
+          margin-left: 0;
+          margin-right: 10px;
+          width: auto; }
+        .pane-node-field-ding-event-materials .ting-object .read-more-text,
+        .pane-node-field-ding-news-materials .ting-object .read-more-text {
+          width: 180px; }
+        .pane-node-field-ding-event-materials .ting-object .ting-cover img,
+        .pane-node-field-ding-news-materials .ting-object .ting-cover img {
+          height: 300px; } }
+    @media screen and (min-width: 1200px) {
+      .pane-node-field-ding-event-materials .ting-object,
+      .pane-node-field-ding-news-materials .ting-object {
+        margin-right: 20px;
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 250px;
+        height: 345px; }
+        .pane-node-field-ding-event-materials .ting-object .group-text,
+        .pane-node-field-ding-news-materials .ting-object .group-text {
+          margin: 0;
+          width: 250px; }
+        .pane-node-field-ding-event-materials .ting-object .read-more-text,
+        .pane-node-field-ding-news-materials .ting-object .read-more-text {
+          width: 250px; }
+        .pane-node-field-ding-event-materials .ting-object .ting-cover img,
+        .pane-node-field-ding-news-materials .ting-object .ting-cover img {
+          height: 345px; } }
