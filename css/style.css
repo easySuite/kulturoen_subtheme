@@ -7714,6 +7714,16 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
 .card-body {
   height: 270px; }
 
+.field-slideshow.field-slideshow-processed {
+  width: auto !important;
+  height: auto !important; }
+
+.share-buttons a {
+  margin-right: 10px; }
+
+.view-ding-related-content .views-row {
+  margin-bottom: 10px; }
+
 .btn, .more-link, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next, .page-contact .col-md-8 form input#edit-submit {
   background-color: #e5e5e5;
   color: #262626; }
@@ -10102,7 +10112,8 @@ table#calendar {
 .pane-node-field-ding-news-materials {
   position: relative;
   min-height: 418px;
-  max-height: 418px; }
+  max-height: 418px;
+  margin-bottom: 20px; }
   .pane-node-field-ding-event-materials .field-items:first,
   .pane-node-field-ding-news-materials .field-items:first {
     height: auto; }
@@ -10114,13 +10125,17 @@ table#calendar {
   .pane-node-field-ding-news-materials .slick-next {
     position: absolute;
     top: -60px;
-    right: 35px;
+    right: 80px;
     width: 70px;
     height: 50px;
     background: #a6d6cc;
     border: none;
     color: transparent;
     outline: none; }
+    @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .pane-node-field-ding-event-materials .slick-next,
+      .pane-node-field-ding-news-materials .slick-next {
+        right: 35px; } }
     .pane-node-field-ding-event-materials .slick-next::before,
     .pane-node-field-ding-news-materials .slick-next::before {
       content: "\e904";
@@ -10137,12 +10152,18 @@ table#calendar {
     color: transparent;
     position: absolute;
     top: -60px;
-    right: 120px;
+    right: 0px;
+    left: 80px;
     width: 70px;
     height: 50px;
     background: #a6d6cc;
     border: none;
     outline: none; }
+    @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .pane-node-field-ding-event-materials .slick-prev,
+      .pane-node-field-ding-news-materials .slick-prev {
+        right: 120px;
+        left: auto; } }
     .pane-node-field-ding-event-materials .slick-prev::before,
     .pane-node-field-ding-news-materials .slick-prev::before {
       content: "\e902";
@@ -10166,9 +10187,13 @@ table#calendar {
     font-size: 40px;
     line-height: 44px;
     color: #262626;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     margin-top: 20px;
     font-family: "SourceSansProSemibold"; }
+    @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .pane-node-field-ding-event-materials h2.pane-title,
+      .pane-node-field-ding-news-materials h2.pane-title {
+        margin-bottom: 40px; } }
   .pane-node-field-ding-event-materials .field-item,
   .pane-node-field-ding-news-materials .field-item {
     display: inline-block;
@@ -10178,43 +10203,89 @@ table#calendar {
     background: #808285;
     width: 250px;
     height: 345px;
-    margin-right: 20px;
-    margin-bottom: 10px;
+    margin: 0 33px;
     float: left; }
-  .pane-node-field-ding-event-materials .ting-cover,
-  .pane-node-field-ding-news-materials .ting-cover {
-    height: 345px;
-    z-index: 0; }
-    .pane-node-field-ding-event-materials .ting-cover img,
-    .pane-node-field-ding-news-materials .ting-cover img {
+    .pane-node-field-ding-event-materials .ting-object .group-text,
+    .pane-node-field-ding-news-materials .ting-object .group-text {
+      margin: 0 33px; }
+    .pane-node-field-ding-event-materials .ting-object .ting-cover,
+    .pane-node-field-ding-news-materials .ting-object .ting-cover {
       height: 345px;
-      width: 250px; }
-  .pane-node-field-ding-event-materials .field-name-ting-abstract,
-  .pane-node-field-ding-news-materials .field-name-ting-abstract {
-    display: none; }
-  .pane-node-field-ding-event-materials .ding-rating,
-  .pane-node-field-ding-news-materials .ding-rating {
-    display: none; }
-  .pane-node-field-ding-event-materials .group-text,
-  .pane-node-field-ding-news-materials .group-text {
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 250px;
-    position: absolute;
-    color: #e5e5e5;
-    font-size: 14px;
-    padding-left: 5px;
-    background: -moz-linear-gradient(top, black 34%, #1f1b1b 58%, rgba(229, 229, 229, 0.13) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, black 34%, #1f1b1b 58%, rgba(229, 229, 229, 0.13) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, black 34%, #1f1b1b 58%, rgba(229, 229, 229, 0.13) 103%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
-    .pane-node-field-ding-event-materials .group-text .field-item a.author,
-    .pane-node-field-ding-news-materials .group-text .field-item a.author {
-      color: #e5e5e5; }
-    .pane-node-field-ding-event-materials .group-text h2,
-    .pane-node-field-ding-news-materials .group-text h2 {
-      font-size: 16px; }
+      z-index: 0; }
+      .pane-node-field-ding-event-materials .ting-object .ting-cover img,
+      .pane-node-field-ding-news-materials .ting-object .ting-cover img {
+        height: 345px;
+        width: 250px; }
+    .pane-node-field-ding-event-materials .ting-object .read-more-text,
+    .pane-node-field-ding-news-materials .ting-object .read-more-text {
+      width: 250px;
+      height: 345px;
+      position: absolute;
+      top: 0; }
+    .pane-node-field-ding-event-materials .ting-object .field-name-ting-abstract,
+    .pane-node-field-ding-news-materials .ting-object .field-name-ting-abstract {
+      display: none; }
+    .pane-node-field-ding-event-materials .ting-object .ding-rating,
+    .pane-node-field-ding-news-materials .ting-object .ding-rating {
+      display: none; }
+    .pane-node-field-ding-event-materials .ting-object .group-text,
+    .pane-node-field-ding-news-materials .ting-object .group-text {
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 250px;
+      position: absolute;
+      color: #e5e5e5;
+      font-size: 14px;
+      padding-left: 5px;
+      height: 150px;
+      background: -moz-linear-gradient(top, black 34%, #1f1b1b 58%, rgba(177, 165, 165, 0.13) 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, black 34%, #1f1b1b 58%, rgba(177, 165, 165, 0.13) 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, black 34%, #1f1b1b 58%, rgba(177, 165, 165, 0.13) 103%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+      .pane-node-field-ding-event-materials .ting-object .group-text .field-item a.author,
+      .pane-node-field-ding-news-materials .ting-object .group-text .field-item a.author {
+        color: #e5e5e5; }
+      .pane-node-field-ding-event-materials .ting-object .group-text h2,
+      .pane-node-field-ding-news-materials .ting-object .group-text h2 {
+        font-size: 16px; }
+    @media screen and (min-width: 767px) {
+      .pane-node-field-ding-event-materials .ting-object,
+      .pane-node-field-ding-news-materials .ting-object {
+        margin-right: 10px;
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 180px;
+        height: 300px; }
+        .pane-node-field-ding-event-materials .ting-object .group-text,
+        .pane-node-field-ding-news-materials .ting-object .group-text {
+          margin-left: 0;
+          margin-right: 10px;
+          width: auto; }
+        .pane-node-field-ding-event-materials .ting-object .read-more-text,
+        .pane-node-field-ding-news-materials .ting-object .read-more-text {
+          width: 180px; }
+        .pane-node-field-ding-event-materials .ting-object .ting-cover img,
+        .pane-node-field-ding-news-materials .ting-object .ting-cover img {
+          height: 300px; } }
+    @media screen and (min-width: 1200px) {
+      .pane-node-field-ding-event-materials .ting-object,
+      .pane-node-field-ding-news-materials .ting-object {
+        margin-right: 20px;
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 250px;
+        height: 345px; }
+        .pane-node-field-ding-event-materials .ting-object .group-text,
+        .pane-node-field-ding-news-materials .ting-object .group-text {
+          margin: 0;
+          width: 250px; }
+        .pane-node-field-ding-event-materials .ting-object .read-more-text,
+        .pane-node-field-ding-news-materials .ting-object .read-more-text {
+          width: 250px; }
+        .pane-node-field-ding-event-materials .ting-object .ting-cover img,
+        .pane-node-field-ding-news-materials .ting-object .ting-cover img {
+          height: 345px; } }
