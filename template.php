@@ -52,7 +52,7 @@ function kulturoen_subtheme_process_ting_object(&$vars) {
 
         // Teaser.
         case 'teaser':
-          $vars['content']['group_text']['read_more_button'] = array(
+          $vars['content']['read_more_button'] = array(
             array(
               '#theme' => 'link',
               '#text' => t('Read more'),
