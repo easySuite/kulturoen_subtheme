@@ -8560,13 +8560,6 @@ fieldset.collapsible .fieldset-title::after {
     .footer-inner > .panel-pane .pane-content .icon span {
       margin-left: 30px; }
 
-.bottom {
-  width: 100%;
-  text-align: center;
-  margin: 25px 0; }
-  .bottom h2.pane-title {
-    display: none; }
-
 .site-header {
   height: 175px; }
   @media screen and (min-width: 1200px) {
