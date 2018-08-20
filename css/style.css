@@ -7686,6 +7686,16 @@ a:link {
     color: #262625;
     text-decoration: none; }
 
+.ticket.button {
+  background: #a6d6cc;
+  padding: 15px 90px 15px 15px;
+  margin-top: 10px; }
+  .ticket.button:hover {
+    color: #262626; }
+
+.field-group-format.group-left {
+  margin-bottom: 20px; }
+
 #page .site-header .topbar-inner .site-name-container.logo-container .site-name {
   color: #ffffff;
   display: block;
@@ -8560,13 +8570,6 @@ fieldset.collapsible .fieldset-title::after {
     .footer-inner > .panel-pane .pane-content .icon span {
       margin-left: 30px; }
 
-.bottom {
-  width: 100%;
-  text-align: center;
-  margin: 25px 0; }
-  .bottom h2.pane-title {
-    display: none; }
-
 .site-header {
   height: 175px; }
   @media screen and (min-width: 1200px) {
@@ -8969,22 +8972,6 @@ ul.main-menu > li, ul.secondary-menu > li {
   min-width: 120px;
   max-width: 160px;
   padding-left: 5px; }
-
-.ding_nodelist-carousel .slick-dots {
-  width: auto;
-  height: 30px;
-  margin-right: 15px; }
-  .ding_nodelist-carousel .slick-dots li {
-    margin: 10px 10px 0 10px; }
-  .ding_nodelist-carousel .slick-dots li a {
-    background-color: #ffffff;
-    color: #262626; }
-  .ding_nodelist-carousel .slick-dots li.slick-active a {
-    background: #a6d6cc; }
-
-.ding_nodelist-carousel .slick-arrow {
-  color: #a6d6cc;
-  z-index: 1; }
 
 .ding_nodelist-carousel .pagination a {
   line-height: 1.8;

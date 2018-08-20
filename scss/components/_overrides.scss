@@ -45,6 +45,17 @@ a:link {
     text-decoration: none;
   }
 }
+.ticket.button {
+  background: $color-primary;
+  padding: 15px 90px 15px 15px;
+  margin-top: 10px;
+  &:hover {
+    color: $charcoal;
+  }
+}
+.field-group-format.group-left {
+  margin-bottom: 20px;
+}
 
 #page .site-header .topbar-inner .site-name-container.logo-container  {
   .site-name {
