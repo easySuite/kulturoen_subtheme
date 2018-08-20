@@ -41,12 +41,17 @@ function kulturoen_subtheme_process_ting_object(&$vars) {
       break;
 
     case 'ting_object':
+      $library = variable_get('culture_frontend_external_library', '');
+      if (empty($library)) {
+        drupal_set_message(t('External library is not set. Set it on the <a href="@path"> @path </a>', array('@path' => '/admin/config/culture')), 'error', FALSE);
+        return '';
+      }
 
       $uri_collection = entity_uri('ting_collection', $vars['object']);
-      $vars['ting_object_url_collection'] = url($uri_collection['path']);
+      $vars['ting_object_url_collection'] = $library . url($uri_collection['path']);
 
       $uri_object = entity_uri('ting_object', $vars['object']);
-      $vars['ting_object_url_object'] = url($uri_object['path']);
+      $vars['ting_object_url_object'] = $library . url($uri_object['path']);
 
       switch ($vars['elements']['#view_mode']) {
 
@@ -56,13 +61,14 @@ function kulturoen_subtheme_process_ting_object(&$vars) {
             array(
               '#theme' => 'link',
               '#text' => '<div class="read-more-text">' . t('Read more') . '</div>',
-              '#path' => $uri_object['path'],
+              '#path' => $library . $uri_object['path'],
               '#options' => array(
                 'attributes' => array(
                   'class' => array(
                     'action-button',
                     'read-more-button',
                   ),
+                  'target' => '_blank',
                 ),
                 'html' => TRUE,
               ),
