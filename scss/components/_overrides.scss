@@ -78,7 +78,14 @@ html #page .content-wrapper .content-inner .row:last-child {
 }
 
 .card-body {
-  height: 270px;
+  height: 285px;
+  position: relative;
+
+  .button.btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
 }
 
 .field-slideshow.field-slideshow-processed {
