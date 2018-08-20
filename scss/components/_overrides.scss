@@ -50,9 +50,9 @@ a:link {
   padding: 15px 90px 15px 15px;
   margin-top: 10px;
   &:hover,
-  &.active,
-  &.focus,
-  &.visited {
+  &:active,
+  &:focus,
+  &:visited {
     color: $charcoal;
   }
 }

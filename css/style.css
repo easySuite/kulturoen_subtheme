@@ -7690,7 +7690,7 @@ a:link {
   background: #a6d6cc;
   padding: 15px 90px 15px 15px;
   margin-top: 10px; }
-  .ticket.button:hover, .ticket.button.active, .ticket.button.focus, .ticket.button.visited {
+  .ticket.button:hover, .ticket.button:active, .ticket.button:focus, .ticket.button:visited {
     color: #262626; }
 
 .field-group-format.group-left {
