@@ -63,7 +63,7 @@
     }
 
     @media #{$wide} {
-      top: 5px;
+      top: 0;
       margin-left: 5px;
       position: relative;
       padding: 10px 0 10px 30px
@@ -72,13 +72,11 @@
     li {
       display: block;
       width: 100%;
-      padding-bottom: 13px;
 
       @media #{$wide}, #{$normal} {
         margin-right: 25px;
         display: inline-block;
         width: auto;
-        padding-bottom: 0;
       }
     }
 
@@ -138,7 +136,7 @@
     margin-right: -10px;
 
     li {
-      padding: 26px 20px 20px 0px;
+      padding: 20px 20px 20px 0px;
       border-right: transparent;
       margin-right: 0;
 
@@ -171,8 +169,7 @@
       }
 
       a {
-        font-size: 16px;
-        font-family: $font-family-bold;
+        font-size: 14px;
 
         &:hover {
           text-decoration: none;
@@ -343,10 +340,8 @@
     img {
       margin-top: 0;
       position: absolute;
-      top: 0px;
-      left: -55px;
-      max-height: initial;
-      max-width: initial;
+      top: 35px;
+      left: -25px;
 
       @media #{$wide}, #{$normal} {
        left: -65px;
@@ -566,9 +561,5 @@ html .not-front #page .content-wrapper .content-inner {
 .logged-in .pane-page-tabs {
   position: relative;
   margin-top: 20px;
-  z-index: 10;
-}
-
-.logged-in .pane-content ul.menu {
-  display: none;
+  z-index: 1;
 }
