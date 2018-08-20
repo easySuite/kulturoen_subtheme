@@ -97,3 +97,25 @@ html #page .content-wrapper .content-inner .row:last-child {
     margin-bottom: 10px;
   }
 }
+
+.field-type-culture-frontend-lists-control {
+  .view-content.row{
+    .views-row {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.front .ding-campaign-wrapper {
+  width: auto;
+  .node-ding-campaign {
+    margin-bottom: 20px;
+  }
+}
+
+.not-front .ding-campaign-wrapper {
+  max-width: 320px;
+  .node-ding-campaign {
+    margin-bottom: 10px;
+  }
+}

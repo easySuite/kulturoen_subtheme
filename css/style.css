@@ -7724,6 +7724,19 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
 .view-ding-related-content .views-row {
   margin-bottom: 10px; }
 
+.field-type-culture-frontend-lists-control .view-content.row .views-row, .field-type-culture-frontend-lists-control .view-content.footer-inner .views-row, .field-type-culture-frontend-lists-control #kultur_calendar-day .kultur_calendar-title > a.view-content .views-row, #kultur_calendar-day .field-type-culture-frontend-lists-control .kultur_calendar-title > a.view-content .views-row, .field-type-culture-frontend-lists-control #kultur_calendar-day .kultur_calendar-body > a.view-content .views-row, #kultur_calendar-day .field-type-culture-frontend-lists-control .kultur_calendar-body > a.view-content .views-row {
+  margin-bottom: 10px; }
+
+.front .ding-campaign-wrapper {
+  width: auto; }
+  .front .ding-campaign-wrapper .node-ding-campaign {
+    margin-bottom: 20px; }
+
+.not-front .ding-campaign-wrapper {
+  max-width: 320px; }
+  .not-front .ding-campaign-wrapper .node-ding-campaign {
+    margin-bottom: 10px; }
+
 .btn, .more-link, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next, .page-contact .col-md-8 form input#edit-submit {
   background-color: #e5e5e5;
   color: #262626; }
@@ -9356,19 +9369,28 @@ table#calendar {
   color: #a6d6cc;
   text-decoration: underline;
   font-family: "SourceSansPro-Bold";
-  font-size: 20px; }
+  font-size: 18px; }
+  @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .ding_nodelist .library a {
+      font-size: 20px; } }
 
 .ding_nodelist h3.node-title {
-  font-size: 50px;
+  font-size: 35px;
   text-decoration: none;
   text-transform: uppercase; }
+  @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .ding_nodelist h3.node-title {
+      font-size: 50px; } }
 
 .ding_nodelist .article-info {
   background: transparent; }
 
 .ding_nodelist span {
   font-family: "SourceSansPro-Bold";
-  font-size: 22px; }
+  font-size: 18px; }
+  @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .ding_nodelist span {
+      font-size: 22px; } }
 
 .ding_nodelist.ding_nodelist-taxonomy .item {
   margin-bottom: 20px; }
@@ -9379,10 +9401,18 @@ table#calendar {
   .ding_nodelist .item .node .item-date,
   .ding_nodelist .item .node .library a,
   .ding_nodelist .item .node .item-price {
-    font-size: 20px;
+    font-size: 16px;
     font-family: "SourceSansProSemibold"; }
+    @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .ding_nodelist .item .node .item-date,
+      .ding_nodelist .item .node .library a,
+      .ding_nodelist .item .node .item-price {
+        font-size: 20px; } }
   .ding_nodelist .item .node p {
-    font-size: 20px; }
+    font-size: 16px; }
+    @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .ding_nodelist .item .node p {
+        font-size: 20px; } }
   .ding_nodelist .item .node .node-title a {
     font-family: "SourceSansProSemibold"; }
     .ding_nodelist .item .node .node-title a:hover {
@@ -9488,7 +9518,6 @@ table#calendar {
 /* Instagram styles
    ========================================================================== */
 .pane-instagram-block-instagram-block {
-  margin-bottom: 40px;
   margin-top: 20px; }
   .pane-instagram-block-instagram-block .ding-social-insta-item {
     min-height: 377px;
