@@ -46,11 +46,6 @@ a:link {
   }
 }
 
-.pane-node-field-ding-event-materials,
-.pane-node-field-ding-news-materials {
-  display: none;
-}
-
 #page .site-header .topbar-inner .site-name-container.logo-container  {
   .site-name {
     color: $white;
@@ -84,4 +79,21 @@ html #page .content-wrapper .content-inner .row:last-child {
 
 .card-body {
   height: 270px;
+}
+
+.field-slideshow.field-slideshow-processed {
+  width: auto!important;
+  height: auto!important;
+}
+
+.share-buttons {
+  a {
+    margin-right: 10px;
+  }
+}
+
+.view-ding-related-content {
+  .views-row {
+    margin-bottom: 10px;
+  }
 }
