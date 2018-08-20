@@ -55,7 +55,7 @@ function kulturoen_subtheme_process_ting_object(&$vars) {
           $vars['content']['read_more_button'] = array(
             array(
               '#theme' => 'link',
-              '#text' => t('Read more'),
+              '#text' => '<div class="read-more-text">' . t('Read more') . '</div>',
               '#path' => $uri_object['path'],
               '#options' => array(
                 'attributes' => array(
@@ -64,7 +64,7 @@ function kulturoen_subtheme_process_ting_object(&$vars) {
                     'read-more-button',
                   ),
                 ),
-                'html' => FALSE,
+                'html' => TRUE,
               ),
             ),
             '#weight' => 9998,
