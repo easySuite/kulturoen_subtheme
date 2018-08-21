@@ -64,14 +64,14 @@ a:link {
   .site-name {
     color: $white;
     display: block;
-    margin-left: 180px;
-    top: 0px;
+    margin-left: 95px;
+    top: 18px;
     position: relative;
     z-index: 1;
-    font-size: 20px;
+    font-size: 16px;
 
     @media #{$wide}, #{$normal} {
-    margin-left: 170px;
+    margin-left: 125px;
     top: 0;
     font-size: 20px;
     }
