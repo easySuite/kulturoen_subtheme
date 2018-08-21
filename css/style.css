@@ -9349,14 +9349,17 @@ table#calendar {
 .pane-ding-news-ding-news-library-list .views-row .ding-news-list-image {
   display: block; }
 
-#views-exposed-form-ding-library-ding-library-libraries-list .views-widget-filter-title {
+#views-exposed-form-ding-library-ding-library-libraries-list .views-widget-filter-title,
+#views-exposed-form-ding-news-ding-news-list .views-widget-filter-title {
   width: 75%;
   padding: 2px 5px 2px 0; }
 
-#views-exposed-form-ding-library-ding-library-libraries-list .views-submit-button {
+#views-exposed-form-ding-library-ding-library-libraries-list .views-submit-button,
+#views-exposed-form-ding-news-ding-news-list .views-submit-button {
   padding: 0;
   width: 25%; }
-  #views-exposed-form-ding-library-ding-library-libraries-list .views-submit-button .form-submit {
+  #views-exposed-form-ding-library-ding-library-libraries-list .views-submit-button .form-submit,
+  #views-exposed-form-ding-news-ding-news-list .views-submit-button .form-submit {
     margin: 0; }
 
 /* Ding nodelist styles
