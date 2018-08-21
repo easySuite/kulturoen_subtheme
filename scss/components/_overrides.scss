@@ -192,3 +192,21 @@ html #page .content-wrapper .content-inner .row:last-child {
     clear: both;
   }
 }
+
+.page-nyheder {
+  .pane-taxonomy-menu {
+    h2 {
+      font-size: $font-size-max;
+    }
+  }
+
+  .sub-menu-title,
+  .sub-menu-title h2,
+  .sub-menu-title h2 a .list-title.sub-menu-title {
+    font-family: $font-family;
+  }
+}
+
+.page-arrangementer .views-exposed-form label {
+  font-weight: normal;
+}

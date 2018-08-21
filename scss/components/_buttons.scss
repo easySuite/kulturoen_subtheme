@@ -27,7 +27,6 @@
   position: relative;
   @extend .float-right;
   padding: 15px 15px 14px 15px;
-  margin-top: 10px;
 
   &:hover,
   &:active,
@@ -44,6 +43,7 @@
 
 .more-links .more-link,
 .node-type-ding-library .more-link {
+  margin-top: 0;
   &:hover,
   &:active,
   &:focus {

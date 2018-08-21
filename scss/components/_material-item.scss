@@ -1,5 +1,5 @@
 .pane-node-field-ding-event-materials,
-.pane-node-field-ding-news-materials {
+.field-name-field-ding-news-materials {
   position: relative;
   min-height: 418px;
   max-height: 418px;
@@ -7,6 +7,15 @@
 
   .field-items:first {
     height: auto;
+  }
+
+  .slick-track {
+    margin-left: 0;
+
+    .field-item.slick-slide {
+      //width: 250px!important;
+      //margin-right: 20px;
+    }
   }
 
   .slick-dots {
@@ -80,7 +89,8 @@
     clear: both;
   }
 
-  h2.pane-title {
+  h2.pane-title,
+  .field-label  {
     font-size: 40px;
     line-height: 44px;
     color: $charcoal;
