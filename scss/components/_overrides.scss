@@ -140,3 +140,45 @@ html #page .content-wrapper .content-inner .row:last-child {
     margin-bottom: 10px;
   }
 }
+
+
+.page-taxonomy {
+  .pane-page-title {
+    margin: 20px 0;
+    text-transform: capitalize;
+  }
+
+  .view-tags-list {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 0;
+    width: 100%;
+
+    @media #{$wide}, #{$normal} {
+      padding-left: 20px;
+    }
+
+    &:after { 
+      content: ".";
+      visibility: hidden;
+      display: block;
+      height: 0;
+      clear: both;
+  }
+
+  h3 {
+    display: none;
+  }
+
+    .views-row {
+      width: 100%;
+
+      @media #{$wide}, #{$normal} {
+        width: 30%;
+        float: left;
+        position: relative;
+        margin: 0 10px 10px 10px;
+      }
+    }
+  }
+}
