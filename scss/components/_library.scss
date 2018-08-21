@@ -111,3 +111,17 @@
     }
   }
 }
+
+#views-exposed-form-ding-library-ding-library-libraries-list {
+  .views-widget-filter-title {
+    width: 75%;
+    padding: 2px 5px 2px 0;
+  }
+  .views-submit-button {
+    padding: 0;
+    width: 25%;
+    .form-submit {
+      margin: 0;
+    }
+  }
+}
