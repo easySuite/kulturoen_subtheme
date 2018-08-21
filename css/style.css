@@ -9324,6 +9324,11 @@ table#calendar {
     .node-ding-library.node-teaser .field-name-field-ding-library-links .field-items {
       padding-left: 120px; } }
 
+.pane-ding-event-ding-event-library-list .views-row .card-img-top, .pane-ding-event-ding-event-library-list .views-row .ding-news-list-image,
+.pane-ding-news-ding-news-library-list .views-row .card-img-top,
+.pane-ding-news-ding-news-library-list .views-row .ding-news-list-image {
+  display: block; }
+
 /* Ding nodelist styles
    ========================================================================== */
 .page-ding-frontpage .ding_nodelist-carousel .ding_nodelist-items .event-image img {
