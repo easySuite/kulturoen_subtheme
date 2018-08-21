@@ -8970,6 +8970,22 @@ ul.main-menu > li, ul.secondary-menu > li {
   max-width: 160px;
   padding-left: 5px; }
 
+.ding_nodelist-carousel .slick-dots {
+  width: auto;
+  height: 30px;
+  margin-right: 15px; }
+  .ding_nodelist-carousel .slick-dots li {
+    margin: 10px 10px 0 10px; }
+  .ding_nodelist-carousel .slick-dots li a {
+    background-color: #ffffff;
+    color: #262626; }
+  .ding_nodelist-carousel .slick-dots li.slick-active a {
+    background: #a6d6cc; }
+
+.ding_nodelist-carousel .slick-arrow {
+  color: #a6d6cc;
+  z-index: 1; }
+
 .ding_nodelist-carousel .pagination a {
   line-height: 1.8;
   color: #262626;
@@ -9236,6 +9252,9 @@ table#calendar {
   clear: none;
   margin-bottom: 0;
   width: 600px; }
+
+.page-libraries .card-body {
+  height: auto; }
 
 .view-ding-library .library-list .views-row:last-child {
   border-bottom: 1px solid rgba(38, 38, 38, 0.2); }
@@ -9616,7 +9635,8 @@ table#calendar {
   font-size: 18px; }
 
 #kultur-calendar .fc-toolbar {
-  margin-bottom: 0; }
+  margin-bottom: 20px;
+  margin-top: 10px; }
 
 #kultur-calendar .fc-center h2,
 #kultur-calendar #kultur-libraries label {

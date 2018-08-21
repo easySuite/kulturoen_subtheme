@@ -25,7 +25,11 @@
     }
   }
 }
-
+.page-libraries {
+  .card-body {
+    height: auto;
+  }
+}
 .view-ding-library .library-list .views-row:last-child {
   border-bottom: 1px solid rgba(38, 38, 38, 0.2);
 }
