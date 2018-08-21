@@ -7769,7 +7769,7 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
     @media screen and (min-width: 1200px), screen and (min-width: 992px) {
       .page-taxonomy .view-tags-list .views-row {
         width: 30%;
-        float: left;
+        display: inline-block;
         position: relative;
         margin: 0 10px 10px 10px; } }
 

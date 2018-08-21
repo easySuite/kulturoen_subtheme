@@ -175,7 +175,7 @@ html #page .content-wrapper .content-inner .row:last-child {
 
       @media #{$wide}, #{$normal} {
         width: 30%;
-        float: left;
+        display: inline-block;
         position: relative;
         margin: 0 10px 10px 10px;
       }
