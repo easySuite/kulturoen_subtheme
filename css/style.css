@@ -9331,7 +9331,7 @@ table#calendar {
 .page-libraries .node-ding-library.node-teaser .field-name-field-ding-library-links {
   bottom: 0; }
 
-.page-libraries .node-ding-library.node-teaser .field-type-emailc {
+.page-libraries .node-ding-library.node-teaser .field-type-email {
   bottom: 20px; }
 
 .page-libraries .node-ding-library.node-teaser .views-exposed-widgets input.form-item-title {
@@ -9414,7 +9414,7 @@ table#calendar {
 #views-exposed-form-ding-multiple-search-panel-pane-1 .views-widget-filter-title,
 #views-exposed-form-ding-multiple-search-panel-pane-1 .views-widget-filter-search_api_views_fulltext {
   width: 75%;
-  padding: 2px 5px 2px 0; }
+  padding: 2px 0 2px 0; }
 
 #views-exposed-form-ding-library-ding-library-libraries-list .views-submit-button,
 #views-exposed-form-ding-news-ding-news-list .views-submit-button,
@@ -9423,7 +9423,7 @@ table#calendar {
   width: 25%;
   margin-top: 6px; }
 
-#views-exposed-form-ding-library-ding-library-libraries-list .views-widget-filter-title {
+#page #views-exposed-form-ding-library-ding-library-libraries-list .views-widget-filter-title {
   padding-right: 0; }
 
 /* Ding nodelist styles
