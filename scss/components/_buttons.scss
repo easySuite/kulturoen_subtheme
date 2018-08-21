@@ -42,6 +42,20 @@
   }
 }
 
+.more-links .more-link,
+.node-type-ding-library .more-link {
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color-primary;
+  }
+
+  a:hover,
+  a:active,
+  a:focus {
+    color: $charcoal;
+  }
+}
 
 .pager-last {
   float: left;

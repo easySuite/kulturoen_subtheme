@@ -7496,7 +7496,7 @@ body .search-overlay--wrapper {
       @media screen and (min-width: 1200px), screen and (min-width: 992px) {
         .html #page.ding2-site-template .logo img {
           left: -65px;
-          top: 0; } }
+          top: 10px; } }
   .html #page.ding2-site-template .topbar {
     height: 100px;
     z-index: auto; }
@@ -7691,14 +7691,14 @@ a:link {
 #page .site-header .topbar-inner .site-name-container.logo-container .site-name {
   color: #ffffff;
   display: block;
-  margin-left: 180px;
-  top: 0px;
+  margin-left: 95px;
+  top: 18px;
   position: relative;
   z-index: 1;
-  font-size: 20px; }
+  font-size: 16px; }
   @media screen and (min-width: 1200px), screen and (min-width: 992px) {
     #page .site-header .topbar-inner .site-name-container.logo-container .site-name {
-      margin-left: 170px;
+      margin-left: 125px;
       top: 0;
       font-size: 20px; } }
 
@@ -7766,6 +7766,20 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
   .more-link a::after {
     top: -18px;
     right: -47px; }
+
+.more-links .more-link:hover, .more-links .more-link:active, .more-links .more-link:focus,
+.node-type-ding-library .more-link:hover,
+.node-type-ding-library .more-link:active,
+.node-type-ding-library .more-link:focus {
+  background-color: #a6d6cc; }
+
+.more-links .more-link a:hover,
+.more-links .more-link a:active,
+.more-links .more-link a:focus,
+.node-type-ding-library .more-link a:hover,
+.node-type-ding-library .more-link a:active,
+.node-type-ding-library .more-link a:focus {
+  color: #262626; }
 
 .pager-last {
   float: left; }
@@ -9251,7 +9265,10 @@ table#calendar {
   float: left;
   clear: none;
   margin-bottom: 0;
-  width: 600px; }
+  width: auto; }
+  @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .node-ding-library.node-teaser .card-body .libraries .ding-library-right {
+      width: 600px; } }
 
 .page-libraries .card-body {
   height: auto; }
@@ -9284,6 +9301,28 @@ table#calendar {
     margin-left: -25px; }
   .opening-hours-week .button-previous:hover {
     background: transparent; }
+
+.node-ding-library.node-teaser a.maps-link {
+  float: right;
+  position: relative; }
+  @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .node-ding-library.node-teaser a.maps-link {
+      float: right;
+      position: absolute;
+      top: 0;
+      right: 0; } }
+
+.node-ding-library.node-teaser .field-name-field-ding-library-phone-number .field-items,
+.node-ding-library.node-teaser .field-name-field-ding-library-fax-number .field-items,
+.node-ding-library.node-teaser .field-name-field-ding-library-mail .field-items,
+.node-ding-library.node-teaser .field-name-field-ding-library-links .field-items {
+  padding-left: 60px; }
+  @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .node-ding-library.node-teaser .field-name-field-ding-library-phone-number .field-items,
+    .node-ding-library.node-teaser .field-name-field-ding-library-fax-number .field-items,
+    .node-ding-library.node-teaser .field-name-field-ding-library-mail .field-items,
+    .node-ding-library.node-teaser .field-name-field-ding-library-links .field-items {
+      padding-left: 120px; } }
 
 /* Ding nodelist styles
    ========================================================================== */

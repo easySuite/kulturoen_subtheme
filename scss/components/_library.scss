@@ -21,10 +21,15 @@
       float: left;
       clear: none;
       margin-bottom: 0;
-      width: 600px;
+      width: auto;
+
+      @media #{$wide}, #{$normal} {
+        width: 600px;
+      }
     }
   }
 }
+
 .page-libraries {
   .card-body {
     height: auto;
@@ -67,6 +72,33 @@
 
     &:hover {
       background: transparent;
+    }
+  }
+}
+
+.node-ding-library.node-teaser {
+  a.maps-link {
+    float: right;
+    position: relative;
+  
+    @media #{$wide}, #{$normal} {
+      float: right;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .field-name-field-ding-library-phone-number,
+  .field-name-field-ding-library-fax-number,
+  .field-name-field-ding-library-mail,
+  .field-name-field-ding-library-links {
+    .field-items {
+      padding-left: 60px;
+
+      @media #{$wide}, #{$normal} {
+        padding-left: 120px;
+      }
     }
   }
 }
