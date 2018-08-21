@@ -31,30 +31,31 @@
 }
 
 .page-libraries {
-  .field-type-email,
-  .field-name-field-ding-library-links {
-    float: left;
-  }
-  
-  .field-name-field-ding-library-phone-number {
-    position: absolute;
-    bottom: 40px;
-    float: left;
-  }
-  .field-name-field-ding-library-links {
-    bottom: 20px;
-  }
-  
-  .views-exposed-widgets input.form-item-title, {
+  .node-ding-library.node-teaser {
+    .field-type-email,
+    .field-name-field-ding-library-links {
+      float: left;
+    }
+    
+    .field-name-field-ding-library-phone-number {
+      position: absolute;
+      bottom: 40px;
+      float: left;
+    }
+    .field-name-field-ding-library-links {
+      bottom: 20px;
+    }
+    
+    .views-exposed-widgets input.form-item-title, {
+      border-radius: inherit;
+    
+    }
+    #edit-submit-ding-library {
+    height: 45px;
     border-radius: inherit;
-  
+    margin-top: 6px;
+    }
   }
-  #edit-submit-ding-library {
-  height: 45px;
-  border-radius: inherit;
-  margin-top: 6px;
-  }
-
   .card-body {
     height: auto;
   }
@@ -150,8 +151,9 @@
   .views-submit-button {
     padding: 0;
     width: 25%;
-    .form-submit {
-      margin: 0;
-    }
+    margin-top: 6px;
   }
+}
+#views-exposed-form-ding-library-ding-library-libraries-list .views-widget-filter-title {
+  padding-right: 0;
 }

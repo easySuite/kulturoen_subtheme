@@ -8555,6 +8555,9 @@ fieldset.collapsible .fieldset-title::after {
 .page-search .views-widget-filter-sticky {
   display: none; }
 
+.page-search .views-exposed-widget.views-submit-button {
+  display: none; }
+
 .page-search img {
   width: 150px;
   height: auto; }
@@ -9029,6 +9032,22 @@ ul.main-menu > li, ul.secondary-menu > li {
   max-width: 160px;
   padding-left: 5px; }
 
+.ding_nodelist-carousel .slick-dots {
+  width: auto;
+  height: 30px;
+  margin-right: 15px; }
+  .ding_nodelist-carousel .slick-dots li {
+    margin: 10px 10px 0 10px; }
+  .ding_nodelist-carousel .slick-dots li a {
+    background-color: #ffffff;
+    color: #262626; }
+  .ding_nodelist-carousel .slick-dots li.slick-active a {
+    background: #a6d6cc; }
+
+.ding_nodelist-carousel .slick-arrow {
+  color: #a6d6cc;
+  z-index: 1; }
+
 .ding_nodelist-carousel .pagination a {
   line-height: 1.8;
   color: #262626;
@@ -9299,22 +9318,22 @@ table#calendar {
     .node-ding-library.node-teaser .card-body .libraries .ding-library-right {
       width: 600px; } }
 
-.page-libraries .field-type-email,
-.page-libraries .field-name-field-ding-library-links {
+.page-libraries .node-ding-library.node-teaser .field-type-email,
+.page-libraries .node-ding-library.node-teaser .field-name-field-ding-library-links {
   float: left; }
 
-.page-libraries .field-name-field-ding-library-phone-number {
+.page-libraries .node-ding-library.node-teaser .field-name-field-ding-library-phone-number {
   position: absolute;
   bottom: 40px;
   float: left; }
 
-.page-libraries .field-name-field-ding-library-links {
+.page-libraries .node-ding-library.node-teaser .field-name-field-ding-library-links {
   bottom: 20px; }
 
-.page-libraries .views-exposed-widgets input.form-item-title {
+.page-libraries .node-ding-library.node-teaser .views-exposed-widgets input.form-item-title {
   border-radius: inherit; }
 
-.page-libraries #edit-submit-ding-library {
+.page-libraries .node-ding-library.node-teaser #edit-submit-ding-library {
   height: 45px;
   border-radius: inherit;
   margin-top: 6px; }
@@ -9394,11 +9413,11 @@ table#calendar {
 #views-exposed-form-ding-news-ding-news-list .views-submit-button,
 #views-exposed-form-ding-multiple-search-panel-pane-1 .views-submit-button {
   padding: 0;
-  width: 25%; }
-  #views-exposed-form-ding-library-ding-library-libraries-list .views-submit-button .form-submit,
-  #views-exposed-form-ding-news-ding-news-list .views-submit-button .form-submit,
-  #views-exposed-form-ding-multiple-search-panel-pane-1 .views-submit-button .form-submit {
-    margin: 0; }
+  width: 25%;
+  margin-top: 6px; }
+
+#views-exposed-form-ding-library-ding-library-libraries-list .views-widget-filter-title {
+  padding-right: 0; }
 
 /* Ding nodelist styles
    ========================================================================== */
