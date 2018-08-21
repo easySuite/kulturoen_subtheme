@@ -111,3 +111,20 @@
     }
   }
 }
+
+#views-exposed-form-ding-library-ding-library-libraries-list,
+#views-exposed-form-ding-news-ding-news-list,
+#views-exposed-form-ding-multiple-search-panel-pane-1 {
+  .views-widget-filter-title,
+  .views-widget-filter-search_api_views_fulltext {
+    width: 75%;
+    padding: 2px 5px 2px 0;
+  }
+  .views-submit-button {
+    padding: 0;
+    width: 25%;
+    .form-submit {
+      margin: 0;
+    }
+  }
+}
