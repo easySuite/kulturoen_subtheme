@@ -64,14 +64,14 @@ a:link {
   .site-name {
     color: $white;
     display: block;
-    margin-left: 180px;
-    top: 0px;
+    margin-left: 95px;
+    top: 18px;
     position: relative;
     z-index: 1;
-    font-size: 20px;
+    font-size: 16px;
 
     @media #{$wide}, #{$normal} {
-    margin-left: 170px;
+    margin-left: 125px;
     top: 0;
     font-size: 20px;
     }
@@ -138,5 +138,57 @@ html #page .content-wrapper .content-inner .row:last-child {
   max-width: 320px;
   .node-ding-campaign {
     margin-bottom: 10px;
+  }
+}
+
+
+.page-taxonomy {
+  .pane-page-title {
+    margin: 20px 0;
+    text-transform: capitalize;
+  }
+
+  .view-tags-list {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 0;
+    width: 100%;
+
+    @media #{$wide}, #{$normal} {
+      padding-left: 20px;
+    }
+
+    &:after { 
+      content: ".";
+      visibility: hidden;
+      display: block;
+      height: 0;
+      clear: both;
+    }
+
+    h3 {
+      display: none;
+    }
+
+    .views-row {
+      width: 100%;
+
+      @media #{$wide}, #{$normal} {
+        width: 30%;
+        display: inline-block;
+        position: relative;
+        margin: 0 10px 10px 10px;
+      }
+    }
+  }
+}
+
+.not-front .content-inner {
+  &:after { 
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
   }
 }
