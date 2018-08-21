@@ -164,21 +164,31 @@ html #page .content-wrapper .content-inner .row:last-child {
       display: block;
       height: 0;
       clear: both;
-  }
+    }
 
-  h3 {
-    display: none;
-  }
+    h3 {
+      display: none;
+    }
 
     .views-row {
       width: 100%;
 
       @media #{$wide}, #{$normal} {
         width: 30%;
-        float: left;
+        display: inline-block;
         position: relative;
         margin: 0 10px 10px 10px;
       }
     }
+  }
+}
+
+.not-front .content-inner {
+  &:after { 
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
   }
 }

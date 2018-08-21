@@ -7769,9 +7769,16 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
     @media screen and (min-width: 1200px), screen and (min-width: 992px) {
       .page-taxonomy .view-tags-list .views-row {
         width: 30%;
-        float: left;
+        display: inline-block;
         position: relative;
         margin: 0 10px 10px 10px; } }
+
+.not-front .content-inner:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
 
 .btn, .more-link, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next, .page-contact .col-md-8 form input#edit-submit {
   background-color: #e5e5e5;
@@ -9404,9 +9411,15 @@ table#calendar {
 .ding_nodelist.ding_nodelist-carousel .slick-dots {
   width: auto;
   height: 30px;
-  margin-right: 15px; }
+  margin-right: 0; }
+  @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .ding_nodelist.ding_nodelist-carousel .slick-dots {
+      margin-right: 15px; } }
   .ding_nodelist.ding_nodelist-carousel .slick-dots li {
-    margin: 10px 10px 0 10px; }
+    margin: 10px 5px 0 5px; }
+    @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .ding_nodelist.ding_nodelist-carousel .slick-dots li {
+        margin: 10px 10px 0 10px; } }
   .ding_nodelist.ding_nodelist-carousel .slick-dots li a {
     background-color: #ffffff;
     color: #262626; }
@@ -9590,6 +9603,9 @@ table#calendar {
       content: 'Læs mere';
       width: 150px;
       font-size: 16px; }
+
+.not-front .frontpage-layout .pane-ding-nodelist .pane-title {
+  margin: 10px 0; }
 
 /* Instagram styles
    ========================================================================== */
