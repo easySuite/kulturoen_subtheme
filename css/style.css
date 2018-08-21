@@ -7744,6 +7744,35 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
   .not-front .ding-campaign-wrapper .node-ding-campaign {
     margin-bottom: 10px; }
 
+.page-taxonomy .pane-page-title {
+  margin: 20px 0;
+  text-transform: capitalize; }
+
+.page-taxonomy .view-tags-list {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 0;
+  width: 100%; }
+  @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .page-taxonomy .view-tags-list {
+      padding-left: 20px; } }
+  .page-taxonomy .view-tags-list:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both; }
+  .page-taxonomy .view-tags-list h3 {
+    display: none; }
+  .page-taxonomy .view-tags-list .views-row {
+    width: 100%; }
+    @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .page-taxonomy .view-tags-list .views-row {
+        width: 30%;
+        float: left;
+        position: relative;
+        margin: 0 10px 10px 10px; } }
+
 .btn, .more-link, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next, .page-contact .col-md-8 form input#edit-submit {
   background-color: #e5e5e5;
   color: #262626; }
