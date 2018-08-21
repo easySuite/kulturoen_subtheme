@@ -9433,6 +9433,9 @@ table#calendar {
 .page-ding-frontpage .ding_nodelist-carousel .ding_nodelist-items .event-image img {
   height: 500px; }
 
+.ding_nodelist .more-links {
+  margin-top: 0; }
+
 .ding_nodelist .event-time .event-day,
 .ding_nodelist .pagination a.selected,
 .ding_nodelist .field-name-field-ding-event-category,
