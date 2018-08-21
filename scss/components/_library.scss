@@ -35,6 +35,7 @@
     .field-type-email,
     .field-name-field-ding-library-links {
       float: left;
+      position: absolute;
     }
     
     .field-name-field-ding-library-phone-number {
@@ -43,9 +44,12 @@
       float: left;
     }
     .field-name-field-ding-library-links {
+      bottom: 0;
+    }
+    .field-type-emailc{
       bottom: 20px;
     }
-    
+
     .views-exposed-widgets input.form-item-title, {
       border-radius: inherit;
     
@@ -53,7 +57,11 @@
     #edit-submit-ding-library {
     height: 45px;
     border-radius: inherit;
-    margin-top: 6px;
+    }
+
+    .views-exposed-form .views-exposed-widget .form-submit {
+      margin-top: 0;
+      height: 45px;
     }
   }
   .card-body {
