@@ -10516,16 +10516,3 @@ table#calendar {
 .ting-reference-headline {
   display: block;
   font-size: 30px; }
-
-.view .card-body .button.btn, .view .card-body .button.more-link, .view .card-body .field-type-culture-frontend-lists-control .slick-slider .button.slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .view .card-body .button.slick-arrow.slick-prev, .view .card-body .field-type-culture-frontend-lists-control .slick-slider .button.slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .view .card-body .button.slick-arrow.slick-next, .view .card-body .page-contact .col-md-8 form input.button#edit-submit, .page-contact .col-md-8 form .view .card-body input.button#edit-submit {
-  top: 50px;
-  bottom: unset;
-  border: 1px solid darkgray; }
-
-.view img.card-img-top, .view img.ding-news-list-image {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, white), url([URL]); }
-
-.view .card-body {
-  margin-top: -100px;
-  height: unset;
-  min-height: 256px; }
