@@ -10511,8 +10511,13 @@ table#calendar {
         .pane-node-field-ding-event-materials .ting-object .ting-cover img,
         .field-name-field-ding-news-materials .ting-object .ting-cover img {
           height: 345px; } }
+  .pane-node-field-ding-event-materials .item-list ul.availability li,
+  .field-name-field-ding-news-materials .item-list ul.availability li {
+    color: #262626;
+    margin: 0; }
 
 .field-name-field-ding-event-materials h3,
 .ting-reference-headline {
   display: block;
-  font-size: 30px; }
+  font-size: 30px;
+  font-family: "SourceSansProSemibold"; }
