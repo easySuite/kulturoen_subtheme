@@ -9445,6 +9445,9 @@ table#calendar {
 .page-search .views-exposed-widget.views-submit-button {
   border-top: 0; }
 
+.page-search .search-right {
+  padding-bottom: 20px; }
+
 /* Ding nodelist styles
    ========================================================================== */
 .page-ding-frontpage .ding_nodelist-carousel .ding_nodelist-items .event-image img {
