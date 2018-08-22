@@ -9433,6 +9433,15 @@ table#calendar {
 .views-exposed-widgets input {
   border-radius: 0; }
 
+.page-search .views-exposed-widget.views-submit-button {
+  display: block; }
+
+.page-search .card-body {
+  height: auto; }
+
+.page-search .ding-campaign img {
+  width: auto; }
+
 /* Ding nodelist styles
    ========================================================================== */
 .page-ding-frontpage .ding_nodelist-carousel .ding_nodelist-items .event-image img {
