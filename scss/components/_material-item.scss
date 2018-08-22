@@ -214,3 +214,7 @@
    display: block;
    font-size: 30px;
 }
+
+.view .card-body .button.btn { top: 50px; bottom: unset; border: 1px solid darkgray; }
+.view img.card-img-top { background: linear-gradient(to bottom, rgba(255,255,255,0) 20%, rgba(255,255,255,1)), url([URL]) }
+.view .card-body { margin-top: -100px; height: unset; min-height: 256px; }
