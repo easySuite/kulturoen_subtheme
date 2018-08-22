@@ -9448,6 +9448,10 @@ table#calendar {
 .page-search .search-right {
   padding-bottom: 20px; }
 
+.node-type-ding-event article,
+.node-type-ding-news article {
+  margin-bottom: 45px; }
+
 /* Ding nodelist styles
    ========================================================================== */
 .page-ding-frontpage .ding_nodelist-carousel .ding_nodelist-items .event-image img {
@@ -10320,7 +10324,8 @@ table#calendar {
 .field-name-field-ding-news-materials {
   position: relative;
   max-height: 418px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-top: 80px; }
   .pane-node-field-ding-event-materials .field-items:first,
   .field-name-field-ding-news-materials .field-items:first {
     height: auto; }
