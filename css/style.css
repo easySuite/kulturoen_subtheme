@@ -10322,7 +10322,6 @@ table#calendar {
 .pane-node-field-ding-event-materials,
 .field-name-field-ding-news-materials {
   position: relative;
-  min-height: 418px;
   max-height: 418px;
   margin-bottom: 20px; }
   .pane-node-field-ding-event-materials .field-items:first,
