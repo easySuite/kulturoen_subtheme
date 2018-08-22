@@ -9448,7 +9448,8 @@ table#calendar {
 .page-search .search-right {
   padding-bottom: 20px; }
 
-.node-type-ding-event article {
+.node-type-ding-event article,
+.node-type-ding-news article {
   margin-bottom: 45px; }
 
 /* Ding nodelist styles
