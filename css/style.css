@@ -7288,6 +7288,11 @@ body .search-overlay--wrapper {
   100% {
     transform: rotate(360deg); } }
 
+.html .ding-campaign-wrapper img.ding-campaign-image {
+  display: block;
+  width: 100%;
+  height: auto; }
+
 .topbar-menu .menu-item {
   background-color: #a6d6cc;
   color: #ffffff; }
@@ -7387,7 +7392,7 @@ body .search-overlay--wrapper {
     margin-top: -5px;
     margin-right: -10px; }
     .topbar .topbar-inner .secondary-menu-wrapper .secondary-menu li {
-      padding: 20px 20px 20px 0px;
+      padding: 20px 10px 20px 0px;
       border-right: transparent;
       margin-right: 0; }
       .topbar .topbar-inner .secondary-menu-wrapper .secondary-menu li:last-child {
@@ -7395,7 +7400,7 @@ body .search-overlay--wrapper {
       .topbar .topbar-inner .secondary-menu-wrapper .secondary-menu li a {
         text-transform: uppercase;
         border-right: 2px solid #808285;
-        padding-right: 20px;
+        padding-right: 15px;
         font-family: "SourceSansProSemibold"; }
       .topbar .topbar-inner .secondary-menu-wrapper .secondary-menu li:last-child a {
         border-right: transparent; }
@@ -9866,7 +9871,8 @@ table#calendar {
   .pane-instagram-block-instagram-block .ding-social-insta-item {
     min-height: 375px; }
   .pane-instagram-block-instagram-block .ding-social-insta-item-caption {
-    display: block; }
+    display: block;
+    height: 65px; }
   .pane-instagram-block-instagram-block .ding-social-insta-item-image img {
     width: 100%; } }
 
