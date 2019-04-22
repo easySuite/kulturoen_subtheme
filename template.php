@@ -60,7 +60,7 @@ function kulturoen_subtheme_process_ting_object(&$vars) {
           $vars['content']['read_more_button'] = array(
             array(
               '#theme' => 'link',
-              '#text' => '<div class="read-more-text">' . t('Read more') . '</div>',
+              '#text' => '<div class="read-more-text"></div>',
               '#path' => $library . $uri_object['path'],
               '#options' => array(
                 'attributes' => array(
