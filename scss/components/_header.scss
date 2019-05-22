@@ -81,7 +81,9 @@
             left: 0;
 
             .main-menu {
-              margin-top: -20px;
+              margin-top: -23px;
+              padding-left: 0px;
+              margin-left: 0px;
             }
           }
         }
@@ -93,6 +95,7 @@
 
            .main-menu {
             margin-top: 0;
+            padding: 15px 0 10px 30px;
           }
           }
 
@@ -148,6 +151,13 @@
                   background-color: $charcoal;
                   color: $color-primary;
                   border: none;
+                  position: relative;
+                  left: -3px;
+
+                  @media #{$wide}, #{$normal} {
+                    left: initial;
+
+                  }
 
                   ::placeholder {
                     color: $color-primary;
