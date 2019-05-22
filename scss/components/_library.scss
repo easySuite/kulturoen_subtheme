@@ -60,6 +60,7 @@
 .opening-hours-week {
   .button-next {
     color: $white;
+    outline: none;
 
     &::before {
       content: "\e904";
@@ -73,11 +74,13 @@
 
     &:hover {
       background: transparent;
+      color: transparent;
     }
   }
 
   .button-previous {
     color: $white;
+    outline: none;
 
     &::before {
       content: "\e902";
@@ -91,6 +94,7 @@
 
     &:hover {
       background: transparent;
+      color: transparent;
     }
   }
 }
@@ -113,11 +117,7 @@
   .field-name-field-ding-library-mail,
   .field-name-field-ding-library-links {
     .field-items {
-      padding-left: 60px;
-
-      @media #{$wide}, #{$normal} {
-        padding-left: 120px;
-      }
+      padding-left: 120px;
     }
   }
 }
