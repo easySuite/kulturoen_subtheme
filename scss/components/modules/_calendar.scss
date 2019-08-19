@@ -25,6 +25,27 @@
     }
   }
 
+  @media #{$wide}, #{$normal} {
+  table tbody td.fc-event-container .fc-content { position: relative;}
+  
+  .fc-day-grid-event span.fc-title {
+    white-space: nowrap;
+    width: 65px;
+    overflow: hidden;
+    text-overflow: clip;
+    padding-left: 26px;
+  }
+
+   table .kultur-today-event span.event-amount,
+   table .kultur-future-event span.event-amount,
+   table .kultur-past-event span.event-amount {
+    left: 0;
+    top: 0;
+    position: absolute;
+    padding-left: 0;
+    
+  }
+  }
   #kultur-libraries {
     .form-type-checkbox {
       position: relative;
