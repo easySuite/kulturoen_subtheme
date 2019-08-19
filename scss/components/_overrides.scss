@@ -207,33 +207,13 @@ html #page .content-wrapper .content-inner .row:last-child {
   font-weight: normal;
 }
 
-a.ticket.button {color: $charcoal}
+a.ticket.button {
+  color: $charcoal
+}
 
 .views-row a:hover,
-.node-ding-event a {color: $charcoal}
-
-@media #{$wide}, #{$normal} {
-  #kultur-calendar table tbody td.fc-event-container .fc-content { position: relative;}
-  
-  #kultur_calendar .fc-day-grid-event span.fc-title {
-    white-space: nowrap;
-    width: 65px;
-    overflow: hidden;
-    text-overflow: clip;
-    padding-left: 26px;
-  }
-
-  #kultur-calendar table .kultur-today-event span.event-amount,
-  #kultur-calendar table .kultur-future-event span.event-amount,
-  #kultur-calendar table .kultur-past-event span.event-amount {
-    left: 0;
-    top: 0;
-    position: absolute;
-    padding-left: 0;
-    
-  }
+.node-ding-event a {
+  color: $charcoal
 }
   
-.ding_nodelist-taxonomy .item .news-link {
-  background: transparent;
-}
+

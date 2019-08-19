@@ -8526,26 +8526,6 @@ a.ticket.button {
 .node-ding-event a {
   color: #262626; }
 
-@media screen and (min-width: 1200px), screen and (min-width: 992px) {
-  #kultur-calendar table tbody td.fc-event-container .fc-content {
-    position: relative; }
-  #kultur_calendar .fc-day-grid-event span.fc-title {
-    white-space: nowrap;
-    width: 65px;
-    overflow: hidden;
-    text-overflow: clip;
-    padding-left: 26px; }
-  #kultur-calendar table .kultur-today-event span.event-amount,
-  #kultur-calendar table .kultur-future-event span.event-amount,
-  #kultur-calendar table .kultur-past-event span.event-amount {
-    left: 0;
-    top: 0;
-    position: absolute;
-    padding-left: 0; } }
-
-.ding_nodelist-taxonomy .item .news-link {
-  background: transparent; }
-
 .btn, .more-link, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next, .page-contact .col-md-8 form input#edit-submit {
   background-color: #a6d6cc;
   color: #262626; }
