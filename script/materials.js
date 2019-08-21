@@ -40,7 +40,7 @@
       }
     });
 
-    //-------------------------------------------
+  //-------------------------------------------
     function switchImgSliderStyles(imgElement) {
       var notMobile = ($(window).width() >=  768);
       imgElement.css({
@@ -71,7 +71,6 @@
     var $header = $('.secondary-menu-wrapper');
     var $element = $('.secondary-menu li');
     var $body = $('.navbar-collapse .main-menu');
-
 
     if ($header.css('position') === 'relative') {
       $element.addClass('secondary-menu').appendTo($body);
