@@ -39,6 +39,35 @@
         });
       }
     });
+
+  //-------------------------------------------
+    function switchImgSliderStyles(imgElement) {
+      var notMobile = ($(window).width() >=  768);
+      imgElement.css({
+        width: imgElement.parent().width() + "px",
+        height: imgElement.parent().height() + "px",
+        background: "url(" + imgElement.attr("src") + ") center center / cover no-repeat",
+        'box-sizing': 'border-box',
+        'padding-left': imgElement.parent().width()
+      });
+    }
+
+    function parseSliderImages() {
+      var sliderImg = $('.ding_nodelist.ding_nodelist-carousel .ding_nodelist-items.slick-slider .slick-list .slick-slide .event-image a img');
+      sliderImg.each(function(i, elem) {
+        var img = $(elem);
+        switchImgSliderStyles(img);
+      });
+    }
+
+    parseSliderImages();
+    $(window).resize(function() {
+      setTimeout(() => {
+        parseSliderImages();
+      }, 50);
+    });
+   //------------change secondary menu near the main menu for the mobile device
+
     var $header = $('.secondary-menu-wrapper');
     var $element = $('.secondary-menu li');
     var $body = $('.navbar-collapse .main-menu');
